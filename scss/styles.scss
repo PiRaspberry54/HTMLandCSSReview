@@ -1,8 +1,32 @@
 //Variables
 
+//Colour
+$color-black: #000000;
 $color-white: #ffffff;
-$color-purple-base: #926fb1;
-$color-lightgrey: #999aa2; 
+$color-grey1: #666666;
+$color-grey2: #999aa2;
+$color-grey3: #d6d6d6;
+$color-grey4: #dddddd;
+$color-white1: #000000, opacity 0%;
+$color-white2: #000000, opacity 10.0%;
+$color-white3: #000000, opacity 10.0%; 
+$color-white3: #000000, opacity 25.0%;
+$color-white3: #ffffff, opacity 50.0%;
+$color-grey-blue: #67809f;
+$color-dark-purple: #79539a;
+$color-purple: #926fb1;
+$color-dark-red: #bc2c28;
+$color-red: #d64541;
+$color-dark-pink: #de093f;
+$color-pink: #f62459;
+$color-dark-green: #25a25a;
+$color-green: #2ecc71;
+$color-dark-blue: #286abd;
+$color-blue: #4183d7;
+$color-black-blue: #333645;
+$color-0ff-blue: #526781;
+$color-grey-brown: #555555;
+//$color: #;
 
 //Main
 * {
@@ -15,9 +39,9 @@ $color-lightgrey: #999aa2;
 }
 
 .search-button {
-    background-color: $color-lightgrey;
+//    background-color: $color-lightgrey;
     color: $color-white;
-    border: $color-lightgrey;
+//    border: $color-lightgrey;
     border-radius: 3px;
     margin: 0;
 }
@@ -41,7 +65,7 @@ img {
 }
 
 .main-nav li {
-    border: 4px solid $color-purple-base;
+    border: 4px solid $color-purple;
     padding: 10px 10px 10px 10px;
 }
 
@@ -83,10 +107,10 @@ p {
     line-height: 46px;
     letter-spacing: 0.4px;
     color: $color-white;
-    background-color: $color-lightgrey;
+//    background-color: $color-lightgrey;
     box-shadow: none;
     margin-left: 20px;
-    border-color: $color-lightgrey;
+//    border-color: $color-lightgrey;
     text-transform: uppercase;
     border: 0;
 }
