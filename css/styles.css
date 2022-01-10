@@ -35,6 +35,12 @@ img {
   border-radius: 3px;
   color: #ffffff;
   background-color: #333645;
+  border: 0;
+}
+
+.hamburger-button:hover {
+  background-color: #22242e;
+  border: 0;
 }
 
 .humburger-box {
@@ -53,10 +59,20 @@ img {
   font-size: 12px;
 }
 
+.search-container {
+  margin: 0 px;
+}
+
 search-button {
-  color: #ffffff;
-  border-radius: 3px;
-  margin: 0;
+  background: none;
+  border: none;
+  color: #333645;
+  position: absolute;
+  right: 5px;
+  line-height: 47px;
+  font-size: 20px;
+  outline: none;
+  border: 0;
 }
 
 .main-nav li {
