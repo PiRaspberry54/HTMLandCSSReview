@@ -68,6 +68,9 @@ img {
     color: $color-white;
     background-color: $color-black-blue;
     border: 0;
+    i {
+        font-size: 3rem;
+    }
 }
 
 .hamburger-button:hover {
@@ -91,11 +94,15 @@ img {
     font-size: 12px;
 }
 
+.menu-container {
+    display: flex;
+}
+
 .search-container {
     margin: 0 px;
 }
 
-search-button {
+.search-button {
 ////    background-color: $color-lightgrey;
 //    color: $color-white;
 ////    border: $color-lightgrey;

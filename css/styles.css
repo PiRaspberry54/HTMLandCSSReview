@@ -37,6 +37,9 @@ img {
   background-color: #333645;
   border: 0;
 }
+.hamburger-button i {
+  font-size: 3rem;
+}
 
 .hamburger-button:hover {
   background-color: #22242e;
@@ -59,11 +62,15 @@ img {
   font-size: 12px;
 }
 
+.menu-container {
+  display: flex;
+}
+
 .search-container {
   margin: 0 px;
 }
 
-search-button {
+.search-button {
   background: none;
   border: none;
   color: #333645;
