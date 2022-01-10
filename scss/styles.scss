@@ -62,26 +62,21 @@ img {
 .hamburger-button {
     width: 63px;
     height: 56px;
-    padding: 5px 15px;
     margin: 0px 0px 0px 20px;
     border-radius: 3px;
     color: $color-white;
     background-color: $color-black-blue;
     border: 0;
+    text-align: center;
     i {
-        font-size: 3rem;
+        font-size: 2em;
+        padding: 4px;
     }
 }
 
 .hamburger-button:hover {
     background-color: $color-dark-black-blue;
     border: 0;
-}
-
-.humburger-box {
-    height: 19px;
-    width: 33px;
-    text-align: center;
 }
 
 .bars {
