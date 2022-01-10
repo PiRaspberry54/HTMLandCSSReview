@@ -39,12 +39,12 @@ $color-grey-brown: #555555;
 }
 
 #top-nav-container {
-    width: 390px;
+    width: 100vw;
     height: 168px;
     display: flex;
     flex-direction: row;
     background-color: greenyellow;
-//    margin: 20px 120px;
+    margin: -8px;
 }
 
 .container-logo, .topnav, .search-container, .menu-container
@@ -53,8 +53,11 @@ $color-grey-brown: #555555;
 }
 
 img {
-    width: 402px;
-    height: 70px;
+//    width: 402px;
+//    height: 70px;
+    width: 100%;
+    max-width: 402px;
+    max-height: 70px;
 }
 
 search-button {
