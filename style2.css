@@ -91,17 +91,19 @@ img {
   width: 100%;
 }
 
-.search-button {
+/*.search-button {
   background: none;
   border: none;
   color: #333645;
-  position: absolute;
-  right: 5px;
+/*  position: absolute;*/
+/*  right: 5px;*/
+/*
   line-height: 47px;
   font-size: 20px;
   outline: none;
   border: 0;
-}
+*/
+/*}*/
 
 form {
   display: inline;
