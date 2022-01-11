@@ -43,9 +43,24 @@ $color-dark-black-blue: #22242e;
     width: 100vw;
     height: 168px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: greenyellow;
     margin: -8px;
+}
+
+.outer {
+    padding: 20px 0;
+    background-color: red;
+    margin: auto;
+}
+
+inner {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
 }
 
 .container-logo, .topnav, .search-container, .menu-container
@@ -72,6 +87,7 @@ img {
         font-size: 2em;
         padding: 4px;
     }
+    flex-basis: 100%;
 }
 
 .hamburger-button:hover {
@@ -95,6 +111,8 @@ img {
 
 .search-container {
     margin: 0 px;
+    display: block;
+    width: 100%;
 }
 
 .search-button {
