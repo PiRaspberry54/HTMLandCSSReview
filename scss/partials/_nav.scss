@@ -1,0 +1,181 @@
+.nav-flexcontainer {
+    display: none;
+}
+.outer-container{
+    width: 100vw;
+    background-color: $nav-background;
+    display: flex;
+    border: solid 1px;
+    border-top-color: black;
+    border-bottom-color: white;
+}
+.nav-container, {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design-container,.support-container,.services-container,.software-container,.marketing-container,.security-container {
+    display: flex;
+    background-color: $nav-background;
+    color: $white;
+    text-align: center;
+    border-right: 100px $black;
+    border-left: 100px $white25;
+}
+
+a {
+    padding: 19px 0px 18px;
+    text-decoration: none;
+    color: $white;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+}
+
+.small {
+    font-size: 10px;
+    padding-bottom: 1px;
+}
+
+.icon {
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.fa-code {
+    color: $purple-base;
+    font-size: 23px;
+}
+
+.fa-desktop {
+    color: $blue-base;
+    font-size: 23px;
+}
+
+.phone2 {
+    color: $red-base;
+    font-size: 23px;
+}
+
+.software {
+    colour: $greyblue-base;
+    font-size: 23px;
+}
+
+.fa-signal {
+    color: $green-base;
+    font-size: 23px;
+}
+
+.fa-shield-alt {
+    color: $pink-base;
+    font-size: 23px;
+}
+
+.design-container:hover {
+    background-color: $purple-base;
+    .fa-code {
+        color: white;
+    }
+}
+
+.support-container:hover {
+    background-color: $blue-base;
+    .fa-desktop {
+        color: white;
+    }
+}
+
+.services-container:hover {
+    background-color: $red-base;
+    .phone2 {
+        color: white;
+    }
+}
+
+.software-container:hover {
+    background-color: $greyblue-base;
+    .software {
+        color: white;
+    }
+}
+
+.marketing-container:hover {
+    background-color: $green-base;
+    .fa-signal {
+        color: white;
+    }
+}
+
+.security-container:hover {
+    background-color: $pink-base;
+    .fa-shield-alt {
+        color: white;
+    }
+}
+
+.dropdown-container {
+    display: flex;
+}
+
+.dropdown1-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $purple;
+    color: $white;
+}
+
+.dropdown2-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $blue;
+    color: $white;
+}
+
+.dropdown3-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $red;
+    color: $white;
+}
+
+.dropdown4-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $greyblue;
+    color: $white;
+}
+
+.dropdown5-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $green;
+    color: $white;
+}
+
+.dropdown6-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $pink;
+    color: $white;
+}
+
+.something {
+    display: flex;
+    width: 100vw;
+    background-color: pink;
+}
+
+@media screen and (min-width: $breakpoint2) {
+    .nav-flexcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
