@@ -1,0 +1,55 @@
+.cards {
+    background-color: $offwhite;
+}
+.top-cards {
+//    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 950px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+}
+
+.bottom-cards {
+//    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: blue;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 950px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+}
+
+.container-software, .container-support, .container-marketing, .container-services, .container-design, .container-security, .container-training {
+    display: flex;
+    background-color: white;
+    border: solid black 1px;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    &:hover {
+           background-color: purple;
+        colour: white;
+        }
+        
+    }
+}
