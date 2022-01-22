@@ -84,17 +84,21 @@
 }
 
 .container-phone {
-/*
-    height: 32px;
-    width: 32px;
-*/
     align-items: center;
+    padding-bottom: 3px;
+    width: 32px;
+    height: 32px;
+    &:hover {
+     border-bottom: 3px solid $nav-background;   
+    }
 }
 
 .phone {
     font-size: 32px;
     color: #333645;
+    transform: rotate(-45deg);
 }
+
 
 .bottom-container {
   width: 100%;

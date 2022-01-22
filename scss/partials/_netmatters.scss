@@ -1,0 +1,33 @@
+.container-netmatters-background {
+    background-color: $nav-background;
+}
+
+.container-netmatters {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: $white;
+    letter-spacing: 0.4px;
+     @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 950px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 400;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.875rem;
+        margin-bottom: 25px;
+        margin: 0 0 10px;
+    }
+}
