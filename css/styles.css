@@ -396,11 +396,14 @@ a {
 
 .dropdown-container {
   display: flex;
+  flex-direction: column;
 }
 
 .dropdown1-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #79539a;
   color: #ffffff;
 }
@@ -408,6 +411,8 @@ a {
 .dropdown2-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #286abd;
   color: #ffffff;
 }
@@ -415,6 +420,8 @@ a {
 .dropdown3-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #bc2c28;
   color: #ffffff;
 }
@@ -422,6 +429,8 @@ a {
 .dropdown4-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #526781;
   color: #ffffff;
 }
@@ -429,6 +438,8 @@ a {
 .dropdown5-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #25a25a;
   color: #ffffff;
 }
@@ -436,14 +447,34 @@ a {
 .dropdown6-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 45px;
   background-color: #de093f;
   color: #ffffff;
 }
 
-.something {
+.drobdown-centre {
   display: flex;
-  width: 100vw;
-  background-color: pink;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .drobdown-centre {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .drobdown-centre {
+    width: 950px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .drobdown-centre {
+    width: 1200px;
+  }
 }
 
 @media screen and (min-width: 992px) {

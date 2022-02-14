@@ -139,11 +139,14 @@ a {
 
 .dropdown-container {
     display: flex;
+    flex-direction: column;
 }
 
 .dropdown1-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $purple;
     color: $white;
 }
@@ -151,6 +154,8 @@ a {
 .dropdown2-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $blue;
     color: $white;
 }
@@ -158,6 +163,8 @@ a {
 .dropdown3-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $red;
     color: $white;
 }
@@ -165,6 +172,8 @@ a {
 .dropdown4-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $greyblue;
     color: $white;
 }
@@ -172,6 +181,8 @@ a {
 .dropdown5-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $green;
     color: $white;
 }
@@ -179,15 +190,34 @@ a {
 .dropdown6-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 45px;
     background-color: $pink;
     color: $white;
 }
 
-.something {
+.drobdown-centre {
     display: flex;
-    width: 100vw;
-    background-color: pink;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+     @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 950px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
 }
+//.something {
+//    display: flex;
+//    width: 100vw;
+//    background-color: pink;
+//}
 
 @media screen and (min-width: $breakpoint2) {
     .nav-flexcontainer {
