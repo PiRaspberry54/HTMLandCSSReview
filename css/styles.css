@@ -338,7 +338,7 @@ a {
 }
 
 .software {
-  colour: #67809f;
+  color: #67809f;
   font-size: 23px;
 }
 
@@ -358,12 +358,18 @@ a {
 .design-container:hover .fa-code {
   color: white;
 }
+.design-container:hover .dropdown1-container {
+  display: flex;
+}
 
 .support-container:hover {
   background-color: #4183d7;
 }
 .support-container:hover .fa-desktop {
   color: white;
+}
+.support-container:hover .dropdown2-container {
+  display: flex;
 }
 
 .services-container:hover {
@@ -372,12 +378,18 @@ a {
 .services-container:hover .phone2 {
   color: white;
 }
+.services-container:hover .dropdown3-container {
+  display: flex;
+}
 
 .software-container:hover {
   background-color: #67809f;
 }
 .software-container:hover .software {
   color: white;
+}
+.software-container:hover .dropdown4-container {
+  display: flex;
 }
 
 .marketing-container:hover {
@@ -386,12 +398,18 @@ a {
 .marketing-container:hover .fa-signal {
   color: white;
 }
+.marketing-container:hover .dropdown5-container {
+  display: flex;
+}
 
 .security-container:hover {
   background-color: #f62459;
 }
 .security-container:hover .fa-shield-alt {
   color: white;
+}
+.security-container:hover .dropdown6-container {
+  display: flex;
 }
 
 .dropdown-container {
@@ -400,7 +418,7 @@ a {
 }
 
 .dropdown1-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;
@@ -409,7 +427,7 @@ a {
 }
 
 .dropdown2-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;
@@ -418,7 +436,7 @@ a {
 }
 
 .dropdown3-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;
@@ -427,7 +445,7 @@ a {
 }
 
 .dropdown4-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;
@@ -436,7 +454,7 @@ a {
 }
 
 .dropdown5-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;
@@ -445,7 +463,7 @@ a {
 }
 
 .dropdown6-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   height: 45px;

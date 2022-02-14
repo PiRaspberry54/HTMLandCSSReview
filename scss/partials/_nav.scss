@@ -9,7 +9,7 @@
     border-top-color: black;
     border-bottom-color: white;
 }
-.nav-container, {
+.nav-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@ a {
 }
 
 .software {
-    colour: $greyblue-base;
+    color: $greyblue-base;
     font-size: 23px;
 }
 
@@ -100,12 +100,18 @@ a {
     .fa-code {
         color: white;
     }
+    .dropdown1-container {
+        display: flex;
+    }
 }
 
 .support-container:hover {
     background-color: $blue-base;
     .fa-desktop {
         color: white;
+    }
+    .dropdown2-container {
+        display: flex;
     }
 }
 
@@ -114,12 +120,18 @@ a {
     .phone2 {
         color: white;
     }
+    .dropdown3-container {
+        display: flex;
+    }
 }
 
 .software-container:hover {
     background-color: $greyblue-base;
     .software {
         color: white;
+    }
+    .dropdown4-container {
+        display: flex;
     }
 }
 
@@ -128,12 +140,18 @@ a {
     .fa-signal {
         color: white;
     }
+    .dropdown5-container {
+        display: flex;
+    }
 }
 
 .security-container:hover {
     background-color: $pink-base;
     .fa-shield-alt {
         color: white;
+    }
+    .dropdown6-container {
+        display: flex;
     }
 }
 
@@ -143,7 +161,7 @@ a {
 }
 
 .dropdown1-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
@@ -152,7 +170,7 @@ a {
 }
 
 .dropdown2-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
@@ -161,7 +179,7 @@ a {
 }
 
 .dropdown3-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
@@ -170,7 +188,7 @@ a {
 }
 
 .dropdown4-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
@@ -179,7 +197,7 @@ a {
 }
 
 .dropdown5-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
@@ -188,7 +206,7 @@ a {
 }
 
 .dropdown6-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     height: 45px;
