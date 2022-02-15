@@ -77,7 +77,7 @@ ul {
   align-items: center;
 }
 
-.hamburger-button, .search-button2 {
+.search-button2 {
   width: 63px;
   height: 56px;
   margin: 0px 0px 0px 20px;
@@ -89,19 +89,58 @@ ul {
   flex-basis: 100%;
 }
 
-.hamburger-button i {
-  font-size: 2 rem;
-  padding: 4px;
+.menu-position {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-.hamburger-button:hover {
-  background-color: #22242e;
-  border: 0;
+.menu-btn {
+  width: fit-content;
+  height: 63px;
+  color: white;
+  padding: 5px 14px;
+  line-height: 1.5;
+  margin-left: 20px;
+  background-color: #151a1e;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.bars {
-  font-size: 23px;
-  line-height: 45px;
+.menu-btn .burger-container {
+  position: relative;
+  width: 100%;
+  margin: auto 0;
+}
+.menu-btn .burger-container .menu-burger {
+  display: block;
+  position: relative;
+  width: 33px;
+  height: 3px;
+  background-color: white;
+}
+.menu-btn .burger-container .menu-burger::before, .menu-btn .burger-container .menu-burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 33px;
+  height: 3px;
+  background-color: white;
+}
+.menu-btn .burger-container .menu-burger::before {
+  content: "";
+  transform: translateY(-8px);
+}
+.menu-btn .burger-container .menu-burger::after {
+  content: "";
+  transform: translateY(8px);
+}
+.menu-btn .menu-title {
+  font-size: 0.75rem;
 }
 
 .menu {
@@ -412,13 +451,12 @@ a {
   display: flex;
 }
 
-.dropdown-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .dropdown1-container {
   display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
   flex-direction: row;
   align-items: center;
   height: 45px;

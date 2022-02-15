@@ -29,7 +29,7 @@
     }
 }
 
-.design-container,.support-container,.services-container,.software-container,.marketing-container,.security-container {
+.design-container, .support-container, .services-container, .software-container, .marketing-container, .security-container {
     display: flex;
     background-color: $nav-background;
     color: $white;
@@ -40,6 +40,7 @@
     border-left: 1px solid $white25;
     flex: 1;
     justify-content: center;
+    
 }
 
 a {
@@ -155,13 +156,12 @@ a {
     }
 }
 
-.dropdown-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .dropdown1-container {
     display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     flex-direction: row;
     align-items: center;
     height: 45px;
