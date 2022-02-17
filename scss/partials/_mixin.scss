@@ -4,6 +4,7 @@
     background-color: white;
     border: 1px solid #ccc;
     justify-content: center;
+    font-weight: 400;
     div {
         display: flex;
         flex-direction: column;
@@ -12,6 +13,7 @@
     }
     .a {
         padding: 30px;
+        cursor: pointer;
     }
     h1 {
         padding-bottom: 14px;

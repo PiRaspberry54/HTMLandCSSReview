@@ -686,7 +686,7 @@ a {
   display: flex;
   width: 100%;
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 992px) {
   .bt2 {
     width: 33.33333%;
   }
@@ -698,6 +698,7 @@ a {
   background-color: white;
   border: 1px solid #ccc;
   justify-content: center;
+  font-weight: 400;
   width: 100%;
 }
 .container-software div, .container-support div, .container-marketing div, .container-services div, .container-design div, .container-security div, .container-training div {
@@ -708,6 +709,7 @@ a {
 }
 .container-software .a, .container-support .a, .container-marketing .a, .container-services .a, .container-design .a, .container-security .a, .container-training .a {
   padding: 30px;
+  cursor: pointer;
 }
 .container-software h1, .container-support h1, .container-marketing h1, .container-services h1, .container-design h1, .container-security h1, .container-training h1 {
   padding-bottom: 14px;

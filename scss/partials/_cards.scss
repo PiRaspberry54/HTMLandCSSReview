@@ -58,7 +58,7 @@
 .bt2 {
     display: flex;
     width: 100%;
-    @media screen and (min-width: $breakpoint3) {
+    @media screen and (min-width: $breakpoint2) {
         width: 33.33333%;
     }
 }
