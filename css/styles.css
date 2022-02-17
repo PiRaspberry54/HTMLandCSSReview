@@ -960,6 +960,7 @@ a {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 50px;
   color: #ffffff;
   letter-spacing: 0.4px;
 }
@@ -987,6 +988,21 @@ a {
   line-height: 1.875rem;
   margin-bottom: 25px;
   margin: 0 0 10px;
+}
+
+.btn-netmatters {
+  background-color: white;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 3px;
+  width: 183px;
+}
+.btn-netmatters:hover {
+  background-color: #ebebeb;
+}
+.btn-netmatters a {
+  color: #333645;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=styles.css.map */

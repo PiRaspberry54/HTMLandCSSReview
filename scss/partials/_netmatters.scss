@@ -9,6 +9,7 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 50px;
     color: $white;
     letter-spacing: 0.4px;
      @media screen and (min-width: $breakpoint1) {
@@ -29,5 +30,20 @@
         line-height: 1.875rem;
         margin-bottom: 25px;
         margin: 0 0 10px;
+    }
+}
+
+.btn-netmatters {
+    background-color: white;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 3px;
+    width: 183px;
+    &:hover {
+        background-color: #ebebeb;
+    }
+    a {
+        color: $nav-background;
+        font-size: 17px;
     }
 }
