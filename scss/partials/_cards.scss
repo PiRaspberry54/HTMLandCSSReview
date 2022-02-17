@@ -1,6 +1,11 @@
 .cards {
     background-color: $offwhite;
 }
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
 .top-cards {
     padding-top: 50px;
     display: flex;
@@ -23,7 +28,7 @@
 .bottom-cards {
     padding-bottom: 50px;
     display: flex;
-//    flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -36,6 +41,25 @@
     }
     @media screen and (min-width: $breakpoint3) {
         width: 1200px;
+    }
+}
+
+.bt1 {
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: $breakpoint1) {
+        width: 50%;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 25%;
+    }
+}
+
+.bt2 {
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: $breakpoint3) {
+        width: 33.33333%;
     }
 }
 
@@ -62,33 +86,22 @@
 .container-services {
     @include card-style($colour1: $red-base);
     width: 100%;
-    @media screen and (min-width: $breakpoint1) {
-        width: 50%;
-    }
 }
 
 .container-design {
     @include card-style($colour1: $purple-base);
     width: 100%;
-    @media screen and (min-width: $breakpoint1) {
-        width: 50%;
-    }
 }
 
 .container-security {
     @include card-style($colour1: $pink-base);
     width: 100%;
-    @media screen and (min-width: $breakpoint1) {
-        width: 50%;
-    }
+
 }
 
 .container-training {
     @include card-style($colour1: $purple-base);
     width: 100%;
-    @media screen and (min-width: $breakpoint1) {
-        width: 50%;
-    }
 }
 
 .icon2-container {
