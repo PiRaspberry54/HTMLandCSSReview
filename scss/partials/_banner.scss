@@ -4,26 +4,58 @@
     width: 100vw;
     height: calc(100vh - 6.875rem);
     position: relative;
-    .image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)),
+    url("../img/carousel/webdesign.jpeg");
 }
 
 
 
 .banner-content{
-    background: linear-gradient(270deg, transparent 25%, $black);
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     display: flex;
-    flex-direction: column;
+//    align-items: center;
+    text-align: start;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     color: $white;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+     @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 950px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.4px;
+        padding-bottom: 25px;
+    }
+    p {
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+        padding-bottom: 35px;
+    }
+    .banner-button {
+        padding: 5px 20px;
+        font-size: 1.25rem;
+        line-height: 50px;
+        text-align: center;
+        width: 224px;
+        background-color: $purple-base;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
 }

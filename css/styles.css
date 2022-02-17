@@ -2,6 +2,8 @@
   font-family: Poppins, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -337,9 +339,11 @@ form {
   flex: 1;
   justify-content: center;
 }
+.design-container a, .support-container a, .services-container a, .software-container a, .marketing-container a, .security-container a {
+  padding: 19px 0px 18px;
+}
 
 a {
-  padding: 19px 0px 18px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -545,26 +549,62 @@ a {
   width: 100vw;
   height: calc(100vh - 6.875rem);
   position: relative;
-}
-.banner-container .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/webdesign.jpeg");
 }
 
 .banner-content {
-  background: linear-gradient(270deg, transparent 25%, #000000);
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   display: flex;
-  flex-direction: column;
+  text-align: start;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #ffffff;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .banner-content {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner-content {
+    width: 950px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .banner-content {
+    width: 1200px;
+  }
+}
+.banner-content h1 {
+  font-size: 3rem;
+  letter-spacing: 0.4px;
+  padding-bottom: 25px;
+}
+.banner-content p {
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+  padding-bottom: 35px;
+}
+.banner-content .banner-button {
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  line-height: 50px;
+  text-align: center;
+  width: 224px;
+  background-color: #926fb1;
+  color: white;
+  border: none;
+  border-radius: 3px;
 }
 
 .cards {
@@ -574,6 +614,7 @@ a {
 .top-cards {
   padding-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -623,7 +664,9 @@ a {
   display: flex;
   color: #333645;
   background-color: white;
-  border: solid black 1px;
+  border: 1px solid #ccc;
+  justify-content: center;
+  width: 100%;
 }
 .container-software div, .container-support div, .container-marketing div, .container-services div, .container-design div, .container-security div, .container-training div {
   display: flex;
@@ -631,182 +674,244 @@ a {
   text-align: center;
   align-items: center;
 }
+.container-software .a, .container-support .a, .container-marketing .a, .container-services .a, .container-design .a, .container-security .a, .container-training .a {
+  padding: 30px;
+}
+.container-software h1, .container-support h1, .container-marketing h1, .container-services h1, .container-design h1, .container-security h1, .container-training h1 {
+  padding-bottom: 14px;
+}
+.container-software .horizontal-rule, .container-support .horizontal-rule, .container-marketing .horizontal-rule, .container-services .horizontal-rule, .container-design .horizontal-rule, .container-security .horizontal-rule, .container-training .horizontal-rule {
+  margin-bottom: 11px;
+}
+.container-software .readmore, .container-support .readmore, .container-marketing .readmore, .container-services .readmore, .container-design .readmore, .container-security .readmore, .container-training .readmore {
+  margin-top: 13px;
+}
 
+.container-software {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
+}
 .container-software .icon2 {
   background-color: #67809f;
   border-color: #67809f;
 }
-.container-software .icon2:hover {
-  background-color: #ffffff;
-  color: #67809f;
-}
 .container-software:hover {
   background-color: #67809f;
   color: #ffffff;
+}
+.container-software:hover .icon2, .container-software:hover .readmore {
+  background-color: #ffffff;
+  color: #67809f;
+}
+.container-software:hover .readmore a {
+  color: #67809f;
+}
+.container-software:hover .horizontal-rule {
+  background-color: #ffffff;
 }
 .container-software .readmore {
   background-color: #67809f;
   color: #ffffff;
 }
 
-.container-software:hover .icon2, .container-software:hover .readmore {
-  background-color: #ffffff;
-  color: #67809f;
+.container-support {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
 }
-
 .container-support .icon2 {
   background-color: #4183d7;
   border-color: #4183d7;
 }
-.container-support .icon2:hover {
-  background-color: #ffffff;
-  color: #4183d7;
-}
 .container-support:hover {
   background-color: #4183d7;
   color: #ffffff;
+}
+.container-support:hover .icon2, .container-support:hover .readmore {
+  background-color: #ffffff;
+  color: #4183d7;
+}
+.container-support:hover .readmore a {
+  color: #4183d7;
+}
+.container-support:hover .horizontal-rule {
+  background-color: #ffffff;
 }
 .container-support .readmore {
   background-color: #4183d7;
   color: #ffffff;
 }
 
-.container-support:hover .icon2, .container-support:hover .readmore {
-  background-color: #ffffff;
-  color: #4183d7;
+.container-marketing {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
 }
-
 .container-marketing .icon2 {
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
-.container-marketing .icon2:hover {
-  background-color: #ffffff;
-  color: #2ecc71;
-}
 .container-marketing:hover {
   background-color: #2ecc71;
   color: #ffffff;
+}
+.container-marketing:hover .icon2, .container-marketing:hover .readmore {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+.container-marketing:hover .readmore a {
+  color: #2ecc71;
+}
+.container-marketing:hover .horizontal-rule {
+  background-color: #ffffff;
 }
 .container-marketing .readmore {
   background-color: #2ecc71;
   color: #ffffff;
 }
 
-.container-marketing:hover .icon2, .container-marketing:hover .readmore {
-  background-color: #ffffff;
-  color: #2ecc71;
+.container-services {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
 }
-
 .container-services .icon2 {
   background-color: #d64541;
   border-color: #d64541;
-  transform: rotate(-45deg);
-}
-.container-services .icon2:hover {
-  background-color: #ffffff;
-  color: #d64541;
 }
 .container-services:hover {
   background-color: #d64541;
   color: #ffffff;
 }
-.container-services .readmore {
-  background-color: #d64541;
-  color: #ffffff;
-}
-
 .container-services:hover .icon2, .container-services:hover .readmore {
   background-color: #ffffff;
   color: #d64541;
 }
-.container-services:hover .icon2 {
-  transform: rotate(-45deg);
+.container-services:hover .readmore a {
+  color: #d64541;
+}
+.container-services:hover .horizontal-rule {
+  background-color: #ffffff;
+}
+.container-services .readmore {
+  background-color: #d64541;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .container-services {
+    width: 50%;
+  }
 }
 
+.container-design {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
+}
 .container-design .icon2 {
   background-color: #926fb1;
   border-color: #926fb1;
-}
-.container-design .icon2:hover {
-  background-color: #ffffff;
-  color: #926fb1;
 }
 .container-design:hover {
   background-color: #926fb1;
   color: #ffffff;
 }
+.container-design:hover .icon2, .container-design:hover .readmore {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+.container-design:hover .readmore a {
+  color: #926fb1;
+}
+.container-design:hover .horizontal-rule {
+  background-color: #ffffff;
+}
 .container-design .readmore {
   background-color: #926fb1;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .container-design {
+    width: 50%;
+  }
+}
 
-.container-design:hover .icon2 {
-  background-color: #ffffff;
-  color: #926fb1;
+.container-security {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
 }
 .container-security .icon2 {
   background-color: #f62459;
   border-color: #f62459;
 }
-.container-security .icon2:hover {
-  background-color: #ffffff;
-  color: #f62459;
-}
 .container-security:hover {
   background-color: #f62459;
   color: #ffffff;
+}
+.container-security:hover .icon2, .container-security:hover .readmore {
+  background-color: #ffffff;
+  color: #f62459;
+}
+.container-security:hover .readmore a {
+  color: #f62459;
+}
+.container-security:hover .horizontal-rule {
+  background-color: #ffffff;
 }
 .container-security .readmore {
   background-color: #f62459;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .container-security {
+    width: 50%;
+  }
+}
 
-.container-security:hover .icon2 {
-  background-color: #ffffff;
-  color: #f62459;
+.container-training {
+  margin: 30px 15px 0px;
+  padding: 0 15px;
+  width: 100%;
 }
 .container-training .icon2 {
   background-color: #926fb1;
   border-color: #926fb1;
 }
-.container-training button {
-  background-color: #926fb1;
-  color: #ffffff;
-}
-.container-training .icon2:hover {
-  background-color: #ffffff;
-  color: #926fb1;
-}
 .container-training:hover {
   background-color: #926fb1;
   color: #ffffff;
+}
+.container-training:hover .icon2, .container-training:hover .readmore {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+.container-training:hover .readmore a {
+  color: #926fb1;
+}
+.container-training:hover .horizontal-rule {
+  background-color: #ffffff;
 }
 .container-training .readmore {
   background-color: #926fb1;
   color: #ffffff;
 }
-
-.container-training:hover .icon2 {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-.container-training:hover button:hover {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-.container-training:hover .readmore {
-  background-color: #ffffff;
-  color: #926fb1;
+@media screen and (min-width: 768px) {
+  .container-training {
+    width: 50%;
+  }
 }
 
 .icon2-container {
-  padding-top: 30px;
+  padding-bottom: 17px;
 }
 .icon2-container .icon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 60px;
   height: 60px;
-  padding-top: 15px;
   border-radius: 50%;
   font-size: 23px;
   color: #ffffff;
@@ -821,10 +926,15 @@ a {
   border: 1px solid;
   width: 129px;
   height: 47px;
+  justify-content: center;
 }
 
-.readmore:hover {
-  background: #ffffff;
+.horizontal-rule {
+  display: flex;
+  height: 3px;
+  width: 28px;
+  background-color: #333645;
+  align-self: center;
 }
 
 .container-netmatters-background {

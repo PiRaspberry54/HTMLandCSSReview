@@ -40,11 +40,12 @@
     border-left: 1px solid $white25;
     flex: 1;
     justify-content: center;
-    
+    a {
+        padding: 19px 0px 18px;
+    }
 }
 
 a {
-    padding: 19px 0px 18px;
     text-decoration: none;
     color: $white;
 }

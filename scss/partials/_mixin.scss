@@ -1,0 +1,55 @@
+@mixin card-container () {
+    display: flex;
+    color: $nav-background;
+    background-color: white;
+    border: 1px solid #ccc;
+    justify-content: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .a {
+        padding: 30px;
+    }
+    h1 {
+        padding-bottom: 14px;
+    }
+    .horizontal-rule {
+        margin-bottom: 11px;
+    }
+    .readmore {
+        margin-top: 13px;
+    }
+        
+}
+
+
+
+@mixin card-style ($colour1: $greyblue-base, $colour2: $white) {
+    margin: 30px 15px 0px;
+    padding: 0 15px;
+    .icon2 {
+        background-color: $colour1;
+        border-color: $colour1;
+    }
+    &:hover {
+        background-color: $colour1;
+        color: $colour2;
+        .icon2, .readmore {
+            background-color: $colour2;
+            color: $colour1;
+        }
+        .readmore a {
+            color: $colour1;
+        }
+        .horizontal-rule {
+            background-color: $colour2;
+        }
+    }
+    .readmore {
+        background-color: $colour1;
+        color: $colour2;
+    }
+}
