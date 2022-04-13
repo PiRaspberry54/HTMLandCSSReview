@@ -315,8 +315,6 @@ form {
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 @media screen and (min-width: 768px) {
   .nav-container {
@@ -336,11 +334,12 @@ form {
 
 .design-button,
 .support-button,
-.services-container,
-.software-container,
-.marketing-container,
-.security-container {
+.services-button,
+.software-button,
+.marketing-button,
+.security-button {
   display: flex;
+  height: 104px;
   background-color: #333645;
   color: #ffffff;
   text-align: center;
@@ -351,12 +350,32 @@ form {
   flex: 1;
   justify-content: center;
 }
+@media screen and (min-width: 992px) {
+  .design-button,
+.support-button,
+.services-button,
+.software-button,
+.marketing-button,
+.security-button {
+    width: 158.3333333333px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .design-button,
+.support-button,
+.services-button,
+.software-button,
+.marketing-button,
+.security-button {
+    width: 200px;
+  }
+}
 .design-button a,
 .support-button a,
-.services-container a,
-.software-container a,
-.marketing-container a,
-.security-container a {
+.services-button a,
+.software-button a,
+.marketing-button a,
+.security-button a {
   padding: 19px 0px 18px;
 }
 
@@ -415,7 +434,7 @@ a {
 .design-container:hover .design-button {
   background-color: #926fb1;
 }
-.design-container:hover .design-button .fa-code {
+.design-container:hover .design-button .design-icon {
   color: white;
 }
 .design-container:hover .dropdown1-container {
@@ -425,126 +444,95 @@ a {
 .support-container:hover .support-button {
   background-color: #4183d7;
 }
-.support-container:hover .support-button .fa-code {
+.support-container:hover .support-button .support-icon {
   color: white;
 }
 .support-container:hover .dropdown2-container {
   display: flex;
 }
 
-.services-container:hover {
+.services-container:hover .services-button {
   background-color: #d64541;
 }
-.services-container:hover .phone2 {
+.services-container:hover .services-button .phone2 {
   color: white;
 }
 .services-container:hover .dropdown3-container {
   display: flex;
 }
 
-.software-container:hover {
+.software-container:hover .software-button {
   background-color: #67809f;
 }
-.software-container:hover .software {
+.software-container:hover .software-button .software {
   color: white;
 }
 .software-container:hover .dropdown4-container {
   display: flex;
 }
 
-.marketing-container:hover {
+.marketing-container:hover .marketing-button {
   background-color: #2ecc71;
 }
-.marketing-container:hover .fa-signal {
+.marketing-container:hover .marketing-button .marketing-icon {
   color: white;
 }
 .marketing-container:hover .dropdown5-container {
   display: flex;
 }
 
-.security-container:hover {
+.security-container:hover .security-button {
   background-color: #f62459;
 }
-.security-container:hover .fa-shield-alt {
+.security-container:hover .security-button .security-icon {
   color: white;
 }
 .security-container:hover .dropdown6-container {
   display: flex;
 }
 
-.dropdown1-container {
+.dropdown6-container, .dropdown5-container, .dropdown4-container, .dropdown3-container, .dropdown2-container, .dropdown1-container {
   display: none;
-  position: relative;
-  top: 0;
+  position: absolute;
   left: 0;
   right: 0;
-  flex-direction: column;
   align-items: center;
   height: 45px;
-  background-color: #79539a;
   color: #ffffff;
-  z-index: 30000;
+  z-index: 3;
+}
+
+.dropdown1-container {
+  background-color: #79539a;
 }
 
 .dropdown2-container {
-  display: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-direction: column;
-  align-items: center;
-  height: 45px;
   background-color: #286abd;
-  color: #ffffff;
 }
 
 .dropdown3-container {
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  height: 45px;
   background-color: #bc2c28;
-  color: #ffffff;
 }
 
 .dropdown4-container {
-  display: none;
-  top: 100px;
-  left: 0;
-  right: 0;
-  flex-direction: row;
-  align-items: center;
-  height: 45px;
   background-color: #526781;
-  color: #ffffff;
 }
 
 .dropdown5-container {
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  height: 45px;
   background-color: #25a25a;
-  color: #ffffff;
 }
 
 .dropdown6-container {
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  height: 45px;
   background-color: #de093f;
-  color: #ffffff;
 }
 
 .dropdown-centre {
   display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+}
+.dropdown-centre li {
+  padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
   .dropdown-centre {

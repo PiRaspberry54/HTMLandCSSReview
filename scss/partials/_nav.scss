@@ -18,8 +18,8 @@
     font-size: 18px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
     @media screen and (min-width: $breakpoint1) {
         width: 750px;
     }
@@ -31,19 +31,14 @@
     }
 }
 
-.design-container,
-.support-container {
-    // position: absolute;
-}
-
 .design-button,
 .support-button,
-.services-container,
-.software-container,
-.marketing-container,
-.security-container {
+.services-button,
+.software-button,
+.marketing-button,
+.security-button {
     display: flex;
-    // position: absolute;
+    height: 104px;
     background-color: $nav-background;
     color: $white;
     text-align: center;
@@ -53,6 +48,12 @@
     border-left: 1px solid $white25;
     flex: 1;
     justify-content: center;
+    @media screen and (min-width: $breakpoint2) {
+        width: calc(950px /6);
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: calc(1200px / 6);
+    }
     a {
         padding: 19px 0px 18px;
     }
@@ -114,7 +115,7 @@ a {
     &:hover {
         .design-button {
             background-color: $purple-base;
-            .fa-code {
+            .design-icon {
                 color: white;
             }
         }
@@ -128,7 +129,7 @@ a {
     &:hover {
         .support-button {
             background-color: $blue-base;
-            .fa-code {
+            .support-icon {
                 color: white;
             }
         }
@@ -138,120 +139,110 @@ a {
     }
 }
 
-.services-container:hover {
-    background-color: $red-base;
-    .phone2 {
-        color: white;
-    }
-    .dropdown3-container {
-        display: flex;
-    }
-}
-
-.software-container:hover {
-    background-color: $greyblue-base;
-    .software {
-        color: white;
-    }
-    .dropdown4-container {
-        display: flex;
+.services-container {
+    &:hover {
+        .services-button {
+            background-color: $red-base;
+            .phone2 {
+                color: white;
+            }
+        }
+        .dropdown3-container {
+            display: flex;
+        }
     }
 }
 
-.marketing-container:hover {
-    background-color: $green-base;
-    .fa-signal {
-        color: white;
-    }
-    .dropdown5-container {
-        display: flex;
+.software-container {
+    &:hover {
+        .software-button {
+            background-color: $greyblue-base;
+            .software {
+                color: white;
+            }
+        }
+        .dropdown4-container {
+            display: flex;
+        }
     }
 }
 
-.security-container:hover {
-    background-color: $pink-base;
-    .fa-shield-alt {
-        color: white;
+.marketing-container {
+    &:hover {
+        .marketing-button {
+            background-color: $green-base;
+            .marketing-icon {
+                color: white;
+            }
+        }
+        .dropdown5-container {
+            display: flex;
+        }
     }
-    .dropdown6-container {
-        display: flex;
+}
+
+.security-container {
+    &:hover {
+        .security-button {
+            background-color: $pink-base;
+            .security-icon {
+                color: white;
+            }
+        }
+        .dropdown6-container {
+            display: flex;
+        }
     }
+}
+
+%dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    align-items: center;
+    height: 45px;
+    color: $white;
+    z-index: 3;
 }
 
 .dropdown1-container {
-    display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $purple;
-    color: $white;
-    z-index: 30000;
 }
 
 .dropdown2-container {
-    display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $blue;
-    color: $white;
 }
 
 .dropdown3-container {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $red;
-    color: $white;
 }
 
 .dropdown4-container {
-    display: none;
-    // position: relative;
-    top: 100px;
-    left: 0;
-    right: 0;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $greyblue;
-    color: $white;
 }
 
 .dropdown5-container {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $green;
-    color: $white;
 }
 
 .dropdown6-container {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
+    @extend %dropdown;
     background-color: $pink;
-    color: $white;
 }
 
 .dropdown-centre {
     display: flex;
-    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    li {
+        padding: 0 15px;
+    }
     @media screen and (min-width: $breakpoint1) {
         width: 750px;
     }
