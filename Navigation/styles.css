@@ -4,7 +4,7 @@
 
 .outer-container {
     width: 100vw;
-    background-color: $nav-background;
+    background-color: #333645;
     display: flex;
     border: solid 1px;
     border-top-color: black;
@@ -20,47 +20,57 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    @media screen and (min-width: $breakpoint1) {
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
         width: 750px;
     }
-    @media screen and (min-width: $breakpoint2) {
+}
+
+@media screen and (min-width: 992px) {
+    .nav-container {
         width: 950px;
     }
-    @media screen and (min-width: $breakpoint3) {
+}
+
+@media screen and (min-width: 1260px) {
+    .nav-container {
         width: 1200px;
     }
 }
 
 .design-container,
-.support-container {
-    // position: absolute;
-}
-
-.design-button,
-.support-button,
+.support-container,
 .services-container,
 .software-container,
 .marketing-container,
 .security-container {
     display: flex;
-    // position: absolute;
-    background-color: $nav-background;
-    color: $white;
+    position: absolute;
+    background-color: #333645;
+    color: #ffffff;
     text-align: center;
     padding-left: 18px;
     padding-right: 18px;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid $white25;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
     flex: 1;
     justify-content: center;
-    a {
-        padding: 19px 0px 18px;
-    }
+}
+
+.design-container a,
+.support-container a,
+.services-container a,
+.software-container a,
+.marketing-container a,
+.security-container a {
+    padding: 19px 0px 18px;
 }
 
 a {
     text-decoration: none;
-    color: $white;
+    color: #ffffff;
 }
 
 .uppercase {
@@ -80,129 +90,128 @@ a {
 }
 
 .fa-code {
-    color: $purple-base;
+    color: #926fb1;
     font-size: 23px;
 }
 
 .fa-desktop {
-    color: $blue-base;
+    color: #4183d7;
     font-size: 23px;
 }
 
 .phone2 {
     transform: rotate(-45deg);
-    color: $red-base;
+    color: #d64541;
     font-size: 23px;
 }
 
 .software {
-    color: $greyblue-base;
+    color: #67809f;
     font-size: 23px;
 }
 
 .fa-signal {
-    color: $green-base;
+    color: #2ecc71;
     font-size: 23px;
 }
 
 .fa-shield-alt {
-    color: $pink-base;
+    color: #f62459;
     font-size: 23px;
 }
 
-.design-container {
-    &:hover {
-        .design-button {
-            background-color: $purple-base;
-            .fa-code {
-                color: white;
-            }
-        }
-        .dropdown1-container {
-            display: flex;
-        }
-    }
+.design-container:hover {
+    background-color: #926fb1;
 }
 
-.support-container {
-    &:hover {
-        .support-button {
-            background-color: $blue-base;
-            .fa-code {
-                color: white;
-            }
-        }
-        .dropdown2-container {
-            display: flex;
-        }
-    }
+.design-container:hover .fa-code {
+    color: white;
+}
+
+.design-container:hover .dropdown1-container {
+    display: flex;
+}
+
+.support-container:hover {
+    background-color: #4183d7;
+}
+
+.support-container:hover .fa-desktop {
+    color: white;
+}
+
+.support-container:hover .dropdown2-container {
+    display: flex;
 }
 
 .services-container:hover {
-    background-color: $red-base;
-    .phone2 {
-        color: white;
-    }
-    .dropdown3-container {
-        display: flex;
-    }
+    background-color: #d64541;
+}
+
+.services-container:hover .phone2 {
+    color: white;
+}
+
+.services-container:hover .dropdown3-container {
+    display: flex;
 }
 
 .software-container:hover {
-    background-color: $greyblue-base;
-    .software {
-        color: white;
-    }
-    .dropdown4-container {
-        display: flex;
-    }
+    background-color: #67809f;
+}
+
+.software-container:hover .software {
+    color: white;
+}
+
+.software-container:hover .dropdown4-container {
+    display: flex;
 }
 
 .marketing-container:hover {
-    background-color: $green-base;
-    .fa-signal {
-        color: white;
-    }
-    .dropdown5-container {
-        display: flex;
-    }
+    background-color: #2ecc71;
+}
+
+.marketing-container:hover .fa-signal {
+    color: white;
+}
+
+.marketing-container:hover .dropdown5-container {
+    display: flex;
 }
 
 .security-container:hover {
-    background-color: $pink-base;
-    .fa-shield-alt {
-        color: white;
-    }
-    .dropdown6-container {
-        display: flex;
-    }
+    background-color: #f62459;
+}
+
+.security-container:hover .fa-shield-alt {
+    color: white;
+}
+
+.security-container:hover .dropdown6-container {
+    display: flex;
 }
 
 .dropdown1-container {
-    display: none;
+    display: flex;
     position: relative;
-    top: 0;
+    top: 50px;
     left: 0;
     right: 0;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $purple;
-    color: $white;
-    z-index: 30000;
+    background-color: #79539a;
+    color: #ffffff;
 }
 
 .dropdown2-container {
     display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $blue;
-    color: $white;
+    background-color: #286abd;
+    color: #ffffff;
 }
 
 .dropdown3-container {
@@ -210,21 +219,21 @@ a {
     flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $red;
-    color: $white;
+    background-color: #bc2c28;
+    color: #ffffff;
 }
 
 .dropdown4-container {
     display: none;
-    // position: relative;
+    position: relative;
     top: 100px;
     left: 0;
     right: 0;
     flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $greyblue;
-    color: $white;
+    background-color: #526781;
+    color: #ffffff;
 }
 
 .dropdown5-container {
@@ -232,8 +241,8 @@ a {
     flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $green;
-    color: $white;
+    background-color: #25a25a;
+    color: #ffffff;
 }
 
 .dropdown6-container {
@@ -241,29 +250,38 @@ a {
     flex-direction: row;
     align-items: center;
     height: 45px;
-    background-color: $pink;
-    color: $white;
+    background-color: #de093f;
+    color: #ffffff;
 }
 
-.dropdown-centre {
+.drobdown-centre {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    @media screen and (min-width: $breakpoint1) {
+}
+
+@media screen and (min-width: 768px) {
+    .drobdown-centre {
         width: 750px;
     }
-    @media screen and (min-width: $breakpoint2) {
+}
+
+@media screen and (min-width: 992px) {
+    .drobdown-centre {
         width: 950px;
     }
-    @media screen and (min-width: $breakpoint3) {
+}
+
+@media screen and (min-width: 1260px) {
+    .drobdown-centre {
         width: 1200px;
     }
 }
 
-@media screen and (min-width: $breakpoint2) {
+@media screen and (min-width: 992px) {
     .nav-flexcontainer {
         display: flex;
         flex-direction: column;
