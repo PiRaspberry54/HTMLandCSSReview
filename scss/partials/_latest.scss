@@ -1,0 +1,142 @@
+.container-latest {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: $white;
+    letter-spacing: 0.4px;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 970px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+    p {
+        color: black;
+    }
+}
+
+.section {
+    display: flex;
+    padding: 50px 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: $white;
+        letter-spacing: 0.4px;
+        @media screen and (min-width: $breakpoint1) {
+            width: 750px;
+        }
+        @media screen and (min-width: $breakpoint2) {
+            width: 970px;
+        }
+        @media screen and (min-width: $breakpoint3) {
+            width: 1200px;
+        }
+        .article.list {
+            overflow: hidden;
+        }
+    }
+}
+
+.latest-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+    .outer-item {
+        display: flex;
+        // flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        .item {
+            display: flex;
+            flex-direction: column;
+            // margin-top: 30px;
+            width: 100%;
+            .img-container {
+                display: flex;
+            }
+            .main-content {
+                padding: 30px;
+                border: 1px solid #ccc;
+                border-top: none;
+                h3 {
+                    min-height: 3rem;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+                    padding-bottom: 15px;
+                    color: black;
+                }
+                .info {
+                    color: black;
+                    font-size: .8125rem;
+                    padding-bottom: 25px;
+                }
+                .extra-styles {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    background-color: $purple-base;
+                    &:hover {
+                        background-color: $purple;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    .details {
+        padding-left: 20px;
+        p {
+            color: black;
+            font-size: .8125rem;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint1) {
+    .latest-row {
+        flex-direction: row;
+    }
+    .disappear {
+        display: none;
+    }
+    .outer-item {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: $breakpoint3) {
+    .disappear {
+        display: flex;
+    }
+    .outer-item {
+        width: 33.33%;
+    }
+}

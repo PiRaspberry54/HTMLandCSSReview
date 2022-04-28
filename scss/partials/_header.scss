@@ -32,7 +32,7 @@
         width: 750px;
     }
     @media screen and (min-width: $breakpoint2) {
-        width: 950px;
+        width: 970px;
     }
     @media screen and (min-width: $breakpoint3) {
         width: 1200px;
@@ -166,6 +166,7 @@
     background-color: rgba(0, 0, 0, .1);
     outline: 1px solid hsla(0, 0%, 100%, .2);
     border: 2px solid rgba(0, 0, 0, .1);
+    border-right: none;
     box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
     border-radius: 2px;
     padding: 5px 15px;
@@ -176,13 +177,15 @@ form {
 }
 
 .search-button {
-    background: #ffffff;
-    border-left: none;
     color: #333645;
+    background-color: rgba(0, 0, 0, .1);
+    outline: 1px solid hsla(0, 0%, 100%, .2);
+    border: 2px solid rgba(0, 0, 0, .1);
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
+    border-radius: 2px;
+    border-left: none;
     line-height: 47px;
     font-size: 20px;
-    outline: none;
-    border: 0;
 }
 
 .button1 {
@@ -202,6 +205,9 @@ form {
     border-color: #4183d7;
     text-transform: uppercase;
     border: 0;
+    i {
+        padding-right: 5px;
+    }
 }
 
 .button1:hover {
@@ -224,6 +230,9 @@ form {
     margin-left: 20px;
     text-transform: uppercase;
     border: 0;
+    i {
+        padding-right: 5px;
+    }
 }
 
 .button2:hover {
@@ -270,7 +279,7 @@ form {
 }
 
 @media screen and (min-width: $breakpoint3) {
-    .search-form input {
+    .search-form {
         display: flex;
         min-width: 100px;
     }

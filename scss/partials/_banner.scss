@@ -6,20 +6,17 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)),
-    url("../img/carousel/webdesign.jpeg");
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/webdesign.jpeg");
 }
 
-
-
-.banner-content{
+.banner-content {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     display: flex;
-//    align-items: center;
+    //    align-items: center;
     text-align: start;
     justify-content: center;
     color: $white;
@@ -28,11 +25,11 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-     @media screen and (min-width: $breakpoint1) {
+    @media screen and (min-width: $breakpoint1) {
         width: 750px;
     }
     @media screen and (min-width: $breakpoint2) {
-        width: 950px;
+        width: 970px;
     }
     @media screen and (min-width: $breakpoint3) {
         width: 1200px;

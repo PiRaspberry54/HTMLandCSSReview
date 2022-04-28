@@ -1,0 +1,51 @@
+.form-section {
+    background-color: #ddd;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: $white;
+    letter-spacing: 0.4px;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 970px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+}
+
+.sign-up {
+    padding: 50px 30px;
+    h2 {
+        margin-bottom: 15px;
+        color: black;
+    }
+    .sign-up-wrapper {
+        display: flex;
+        flex-direction: row;
+        .name {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 15px;
+            margin-left: -15px;
+        }
+        .email {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 15px;
+            margin-right: -15px;
+        }
+    }
+}

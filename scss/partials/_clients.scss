@@ -1,0 +1,76 @@
+.logo-section {
+    background-color: red;
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    background-color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 970px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+}
+
+.row {
+    // display: flex;
+    // position: relative;
+}
+
+.client-images {
+    display: flex;
+    justify-content: space-between;
+    // position: relative;
+    flex-direction: row;
+    width: 100%;
+    @media screen and (min-width: $breakpoint1) {
+        height: 100px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        height: 200px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        height: 300px;
+    }
+}
+
+.image-holder {
+    position: relative;
+    &:hover {
+        & img {
+            &.colour {
+                z-index: 3;
+            }
+        }
+    }
+    img {
+        height: 100%;
+        width: auto;
+    }
+    // position: relative;
+}
+
+.colour {
+    position: relative;
+    // position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.black-white {
+    position: absolute;
+    // position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
