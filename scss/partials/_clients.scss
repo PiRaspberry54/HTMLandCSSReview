@@ -1,11 +1,11 @@
 .logo-section {
-    background-color: red;
-    display: flex;
+    // background-color: red;
+    display: none;
 }
 
 .logo-container {
     display: flex;
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -39,7 +39,7 @@
         height: 200px;
     }
     @media screen and (min-width: $breakpoint3) {
-        height: 300px;
+        height: 72px;
     }
 }
 

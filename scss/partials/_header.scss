@@ -59,7 +59,7 @@
 .search-button2 {
     width: 63px;
     height: 56px;
-    margin: 0px 0px 0px 20px;
+    // margin: 0px 0px 0px 20px;
     border-radius: 3px;
     color: #ffffff;
     background-color: #333645;
@@ -254,7 +254,8 @@ form {
 }
 
 form {
-    display: inline;
+    display: flex;
+    // margin-left: 20px;
 }
 
 @media screen and (min-width: $breakpoint1) {

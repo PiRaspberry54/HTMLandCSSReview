@@ -2,3 +2,50 @@ footer {
     background-color: $nav-background;
     color: white;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    // background-color: hotpink;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $breakpoint1) {
+        width: 750px;
+    }
+    @media screen and (min-width: $breakpoint2) {
+        width: 970px;
+    }
+    @media screen and (min-width: $breakpoint3) {
+        width: 1200px;
+    }
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-section1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer-section2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #888;
+    font-size: .8125rem;
+    padding-top: 10px;
+    margin-top: 10px;
+}

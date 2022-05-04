@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Poppins";
-    src: url("../../fonts/poppins-v15-latin-regular.woff2") format("woff2");
+    src: url("/fonts/poppins-v15-latin-regular.woff2") format("woff2");
 }
 
 * {
-    @font-face {
-        font-family: "Poppins";
-        src: url("../../fonts/poppins-v15-latin-regular.woff2") format("woff2");
-    }
+    // @font-face {
+    //     font-family: "Poppins";
+    //     src: url("../../fonts/poppins-v15-latin-regular.woff2") format("woff2");
+    // }
     font-family: Poppins;
     font-size: 16px;
     box-sizing: border-box;
