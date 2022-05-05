@@ -32,11 +32,12 @@
     // position: relative;
     flex-direction: row;
     width: 100%;
+    height: 40px;
     @media screen and (min-width: $breakpoint1) {
-        height: 100px;
+        height: 40px;
     }
     @media screen and (min-width: $breakpoint2) {
-        height: 50px;
+        height: 60px;
     }
     @media screen and (min-width: $breakpoint3) {
         height: 72px;

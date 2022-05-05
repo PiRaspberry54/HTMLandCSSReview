@@ -241,7 +241,7 @@
 
 .fa-paper-plane,
 .fa-mouse {
-    font-size: 23pxx;
+    font-size: 23px;
 }
 
 .search-button2 {
@@ -256,6 +256,10 @@
 .form {
     display: flex;
     margin-left: 20px;
+}
+
+.search-form {
+    padding: 5px 15px
 }
 
 @media screen and (min-width: $breakpoint1) {
@@ -282,6 +286,26 @@
 @media screen and (min-width: $breakpoint3) {
     .search-form {
         display: flex;
-        min-width: 100px;
+        // min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .search-form {
+        display: flex;
+        width: 174 px;
+    }
+}
+
+@media screen and (min-width: $breakpoint2) {
+    .search-form {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $breakpoint3) {
+    .search-form {
+        display: flex;
+        width: 240px;
     }
 }
