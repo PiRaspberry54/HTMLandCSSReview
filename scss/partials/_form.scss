@@ -9,8 +9,8 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    // padding-bottom: 40px;
+    // padding-top: 40px;
     color: $white;
     letter-spacing: 0.4px;
     @media screen and (min-width: $breakpoint1) {
@@ -27,26 +27,104 @@
 .sign-up {
     display: flex;
     flex-direction: column;
+    padding: 50px 30px;
     h2 {
         margin-bottom: 15px;
-        color: black;
+        color: #333645;
+        font-weight: 400;
+        font-size: 32px;
     }
     .sign-up-wrapper {
         display: flex;
         flex-direction: row;
+        margin-bottom: 15px;
         .name {
             display: flex;
+            color: #333645;
+            font-weight: bolder;
+            font-size: 16px;
             flex-direction: column;
             width: 100%;
             padding: 0px 15px;
-            // margin-left: -15px;
+            margin-left: -15px;
+            input {
+                height: 47px;
+                padding: 5px 15px;
+                border: 1px solid #e5e5e5;
+                border-color: #ccc;
+                border-radius: 2px;
+                box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+                color: #ccc;
+                &:focus {
+                    border-color: #5bc0de;
+                    outline: 0;
+                    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+                }
+            }
+            .label::after {
+                content: " *";
+                color: #d24d57;
+            }
         }
-        .email {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding: 0px 15px;
-            // margin-right: -15px;
+    }
+    .email {
+        display: flex;
+        color: #333645;
+        font-weight: bolder;
+        font-size: 16px;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 15px;
+        margin-right: -15px;
+        input {
+            height: 47px;
+            padding: 5px 15px;
+            border: 1px solid #e5e5e5;
+            border-color: #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            color: #ccc;
+            &:focus {
+                border-color: #5bc0de;
+                outline: 0;
+                box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+            }
         }
+    }
+    .label::after {
+        content: " *";
+        color: #d24d57;
+    }
+}
+
+.checkbox {
+    color: #333645;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    a {
+        color: #333645;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.subscribe-buttton {
+    background-color: #333645;
+    border: 1px solid transparent;
+    border-color: #333645;
+    outline: none;
+    color: white;
+    height: auto;
+    width: fit-content;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-radius: 3px;
+    white-space: normal;
+    &:hover {
+        background-color: #2c2c2c;
+        border-color: #2c2c2c;
     }
 }

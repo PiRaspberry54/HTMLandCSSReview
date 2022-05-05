@@ -4,7 +4,6 @@
 }
 * {
   font-family: Poppins;
-  font-size: 16px;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -12,6 +11,7 @@
 
 body {
   margin: 0px;
+  font-size: 13px;
 }
 
 ul {
@@ -95,14 +95,12 @@ ul {
   background-color: #333645;
   border: 0;
   text-align: center;
-  flex-basis: 100%;
 }
 
 .menu-position {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 20px;
 }
 
 .menu-btn {
@@ -195,7 +193,7 @@ ul {
   padding: 5px 15px;
 }
 
-form {
+.form2 {
   width: 100%;
 }
 
@@ -276,8 +274,9 @@ form {
   background-color: #84858f;
 }
 
-form {
+.form {
   display: flex;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -285,7 +284,7 @@ form {
     display: flex;
   }
   .search-container2 .search-form {
-    display: none;
+    display: flex;
   }
 
   .bottom-container {
@@ -575,7 +574,8 @@ a {
   height: calc(100vh - 6.875rem);
   position: relative;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  object-fit: fill;
   background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/webdesign.jpeg");
 }
 
@@ -634,6 +634,7 @@ a {
 
 .cards {
   background-color: whitesmoke;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -728,6 +729,7 @@ a {
   color: #333645;
   background-color: white;
   border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   justify-content: center;
   font-weight: 400;
   width: 100%;
@@ -761,6 +763,7 @@ a {
 .container-design h1,
 .container-security h1,
 .container-training h1 {
+  font-size: 18px;
   padding-bottom: 14px;
 }
 .container-software .horizontal-rule,
@@ -795,7 +798,8 @@ a {
   background-color: #67809f;
   color: #ffffff;
 }
-.container-software:hover .icon2, .container-software:hover .readmore {
+.container-software:hover .icon2,
+.container-software:hover .readmore {
   background-color: #ffffff;
   color: #67809f;
 }
@@ -823,7 +827,8 @@ a {
   background-color: #4183d7;
   color: #ffffff;
 }
-.container-support:hover .icon2, .container-support:hover .readmore {
+.container-support:hover .icon2,
+.container-support:hover .readmore {
   background-color: #ffffff;
   color: #4183d7;
 }
@@ -851,7 +856,8 @@ a {
   background-color: #2ecc71;
   color: #ffffff;
 }
-.container-marketing:hover .icon2, .container-marketing:hover .readmore {
+.container-marketing:hover .icon2,
+.container-marketing:hover .readmore {
   background-color: #ffffff;
   color: #2ecc71;
 }
@@ -879,7 +885,8 @@ a {
   background-color: #d64541;
   color: #ffffff;
 }
-.container-services:hover .icon2, .container-services:hover .readmore {
+.container-services:hover .icon2,
+.container-services:hover .readmore {
   background-color: #ffffff;
   color: #d64541;
 }
@@ -907,7 +914,8 @@ a {
   background-color: #926fb1;
   color: #ffffff;
 }
-.container-design:hover .icon2, .container-design:hover .readmore {
+.container-design:hover .icon2,
+.container-design:hover .readmore {
   background-color: #ffffff;
   color: #926fb1;
 }
@@ -935,7 +943,8 @@ a {
   background-color: #f62459;
   color: #ffffff;
 }
-.container-security:hover .icon2, .container-security:hover .readmore {
+.container-security:hover .icon2,
+.container-security:hover .readmore {
   background-color: #ffffff;
   color: #f62459;
 }
@@ -963,7 +972,8 @@ a {
   background-color: #926fb1;
   color: #ffffff;
 }
-.container-training:hover .icon2, .container-training:hover .readmore {
+.container-training:hover .icon2,
+.container-training:hover .readmore {
   background-color: #ffffff;
   color: #926fb1;
 }
@@ -1248,8 +1258,6 @@ a {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 40px;
-  padding-top: 40px;
   color: #ffffff;
   letter-spacing: 0.4px;
 }
@@ -1272,26 +1280,106 @@ a {
 .sign-up {
   display: flex;
   flex-direction: column;
+  padding: 50px 30px;
 }
 .sign-up h2 {
   margin-bottom: 15px;
-  color: black;
+  color: #333645;
+  font-weight: 400;
+  font-size: 32px;
 }
 .sign-up .sign-up-wrapper {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
 }
 .sign-up .sign-up-wrapper .name {
   display: flex;
+  color: #333645;
+  font-weight: bolder;
+  font-size: 16px;
   flex-direction: column;
   width: 100%;
   padding: 0px 15px;
+  margin-left: -15px;
 }
-.sign-up .sign-up-wrapper .email {
+.sign-up .sign-up-wrapper .name input {
+  height: 47px;
+  padding: 5px 15px;
+  border: 1px solid #e5e5e5;
+  border-color: #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  color: #ccc;
+}
+.sign-up .sign-up-wrapper .name input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.sign-up .sign-up-wrapper .name .label::after {
+  content: " *";
+  color: #d24d57;
+}
+.sign-up .email {
   display: flex;
+  color: #333645;
+  font-weight: bolder;
+  font-size: 16px;
   flex-direction: column;
   width: 100%;
   padding: 0px 15px;
+  margin-right: -15px;
+}
+.sign-up .email input {
+  height: 47px;
+  padding: 5px 15px;
+  border: 1px solid #e5e5e5;
+  border-color: #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  color: #ccc;
+}
+.sign-up .email input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.sign-up .label::after {
+  content: " *";
+  color: #d24d57;
+}
+
+.checkbox {
+  color: #333645;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.checkbox a {
+  color: #333645;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.subscribe-buttton {
+  background-color: #333645;
+  border: 1px solid transparent;
+  border-color: #333645;
+  outline: none;
+  color: white;
+  height: auto;
+  width: fit-content;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 17px;
+  border-radius: 3px;
+  white-space: normal;
+}
+.subscribe-buttton:hover {
+  background-color: #2c2c2c;
+  border-color: #2c2c2c;
 }
 
 .logo-section {
@@ -1334,7 +1422,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   .client-images {
-    height: 200px;
+    height: 50px;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -1368,6 +1456,11 @@ a {
   z-index: 2;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-section {
+    display: flex;
+  }
+}
 footer {
   background-color: #333645;
   color: white;
@@ -1500,6 +1593,12 @@ footer {
 .accrediations-row2 div img {
   height: 100%;
   width: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .accreditations-section {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -84,8 +84,8 @@
     // position: relative;
 }
 
-// @media screen and (min-width: $breakpoint1) {
-//     .accreditations-section {
-//         display: flex;
-//     }
-// }
+@media screen and (min-width: $breakpoint2) {
+    .accreditations-section {
+        display: flex;
+    }
+}

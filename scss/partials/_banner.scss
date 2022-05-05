@@ -5,7 +5,8 @@
     height: calc(100vh - 6.875rem);
     position: relative;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
+    object-fit: fill;
     background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/webdesign.jpeg");
 }
 

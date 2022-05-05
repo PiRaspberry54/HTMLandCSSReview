@@ -65,14 +65,14 @@
     background-color: #333645;
     border: 0;
     text-align: center;
-    flex-basis: 100%;
+    // flex-basis: 100%;
 }
 
 .menu-position {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    padding-right: 20px;
+    // padding-right: 20px;
 }
 
 .menu-btn {
@@ -172,7 +172,7 @@
     padding: 5px 15px;
 }
 
-form {
+.form2 {
     width: 100%;
 }
 
@@ -253,16 +253,16 @@ form {
     background-color: $ButtonHover;
 }
 
-form {
+.form {
     display: flex;
-    // margin-left: 20px;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: $breakpoint1) {
     .search-container2 {
         display: flex;
         .search-form {
-            display: none;
+            display: flex;
         }
     }
     .bottom-container {

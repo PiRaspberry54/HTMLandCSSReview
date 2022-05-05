@@ -3,6 +3,7 @@
     color: $nav-background;
     background-color: white;
     border: 1px solid #ccc;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
     justify-content: center;
     font-weight: 400;
     div {
@@ -16,6 +17,7 @@
         cursor: pointer;
     }
     h1 {
+        font-size: 18px;
         padding-bottom: 14px;
     }
     .horizontal-rule {
@@ -24,10 +26,7 @@
     .readmore {
         margin-top: 13px;
     }
-        
 }
-
-
 
 @mixin card-style ($colour1: $greyblue-base, $colour2: $white) {
     margin: 30px 15px 0px;
@@ -39,7 +38,8 @@
     &:hover {
         background-color: $colour1;
         color: $colour2;
-        .icon2, .readmore {
+        .icon2,
+        .readmore {
             background-color: $colour2;
             color: $colour1;
         }
