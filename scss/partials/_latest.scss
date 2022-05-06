@@ -1,6 +1,7 @@
 .container-latest {
     display: flex;
     flex-direction: column;
+    // box-shadow: 5px 35px rgb(0 0 0 / 10%);
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -19,7 +20,12 @@
         width: 1200px;
     }
     p {
-        color: black;
+        width: fit-content;
+        padding-bottom: 35px;
+        color: #333645;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: solid 5px #333645;
     }
 }
 
