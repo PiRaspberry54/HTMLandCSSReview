@@ -76,6 +76,17 @@
             width: 100%;
             .img-container {
                 display: flex;
+                overflow: hidden;
+                // z-index: 100;
+                img {
+                    transition: transform 0.5s ease;
+                }
+                img:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.5s ease;
+                    overflow: hidden;
+                    opacity: 0.8;
+                }
             }
             .main-content {
                 padding: 30px;
@@ -87,7 +98,7 @@
                     line-height: 1.5rem;
                     font-size: 1rem;
                     padding-bottom: 15px;
-                    color: black;
+                    color: $purple-base;
                 }
                 .info {
                     color: black;

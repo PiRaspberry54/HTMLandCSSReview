@@ -11,14 +11,64 @@ footer {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (min-width: $breakpoint0) {
+        .footer-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .footer-section1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .footer-section2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
     @media screen and (min-width: $breakpoint1) {
         width: 750px;
     }
     @media screen and (min-width: $breakpoint2) {
         width: 970px;
+        .footer-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .footer-section1 {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .footer-section2 {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
     }
     @media screen and (min-width: $breakpoint3) {
         width: 1200px;
+        .footer-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .footer-section1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .footer-section2 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
     }
 }
 
@@ -30,15 +80,14 @@ footer {
 
 .footer-section1 {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
 }
 
 .footer-section2 {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .footer-bottom {

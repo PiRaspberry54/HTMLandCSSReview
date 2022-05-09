@@ -3,6 +3,7 @@
     display: none;
     padding: 50px 0;
     background-color: linear-gradient(whitesmoke, white);
+    border-top: 1px solid orange;
 }
 
 .logo-container {
@@ -54,6 +55,9 @@
                 z-index: 3;
             }
         }
+        .tooltip {
+            display: flex;
+        }
     }
     img {
         height: 100%;
@@ -76,6 +80,26 @@
     left: 0;
     top: 0;
     z-index: 2;
+}
+
+.tooltip {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 80px;
+    .tooltip-content {
+        background-color: #333465;
+        color: white;
+        padding: 20px;
+    }
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #333465;
+        align-self: center;
+    }
 }
 
 @media screen and (min-width: $breakpoint1) {
