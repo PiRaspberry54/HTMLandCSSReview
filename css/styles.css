@@ -1497,7 +1497,7 @@ a {
   bottom: 80px;
 }
 .tooltip .tooltip-content {
-  background-color: #333465;
+  background-color: #333645;
   color: white;
   padding: 20px;
 }
@@ -1506,7 +1506,7 @@ a {
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 40px solid #333465;
+  border-top: 40px solid #333645;
   align-self: center;
 }
 
