@@ -2,8 +2,7 @@
     // background-color: red;
     display: none;
     padding: 50px 0;
-    background-color: linear-gradient(whitesmoke, white);
-    border-top: 1px solid orange;
+    background: linear-gradient(#f0f0f0 5%, white);
 }
 
 .logo-container {
@@ -29,6 +28,7 @@
     // position: relative;
 }
 
+//Need to remove white backgrounds from the images.
 .client-images {
     display: flex;
     justify-content: space-between;
@@ -91,6 +91,15 @@
         background-color: #333645;
         color: white;
         padding: 20px;
+        max-width: 260px;
+        left: -200px;
+        right: -200px;
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 13px;
+        }
     }
     .arrow {
         width: 0;

@@ -31,6 +31,8 @@
 
 .section {
     display: flex;
+    background: linear-gradient(#f0f0f0 5%, white);
+    // background-color: #f0f0f0;
     padding: 50px 0;
     .container {
         display: flex;
@@ -142,8 +144,9 @@
     .latest-row {
         flex-direction: row;
     }
-    .disappear {
+    #disappear {
         display: none;
+        // width: 0;
     }
     .outer-item {
         width: 50%;
@@ -151,8 +154,9 @@
 }
 
 @media screen and (min-width: $breakpoint3) {
-    .disappear {
+    #disappear {
         display: flex;
+        // width: 33.33%
     }
     .outer-item {
         width: 33.33%;
