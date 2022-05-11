@@ -1429,6 +1429,25 @@ a {
   border-radius: 3px;
 }
 
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 35px;
+}
+.checkbox-label p {
+  line-height: 35px;
+}
+.checkbox-label p,
+.checkbox-label a {
+  color: #333645;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.checkbox-label a {
+  text-decoration: underline;
+}
+
 /* On mouse-over, add a grey background color */
 /* When the checkbox is checked, add a blue background */
 .checkbox-container input:checked ~ .checkmark {
@@ -1480,6 +1499,11 @@ a {
   border-color: #2c2c2c;
 }
 
+@media screen and (min-width: 992px) {
+  .sign-up-wrapper {
+    flex-direction: column;
+  }
+}
 .logo-section {
   display: none;
   padding: 50px 0;
