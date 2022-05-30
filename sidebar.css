@@ -9,6 +9,7 @@
 body {
     margin: 0px;
     font-size: 13px;
+    background-color: aliceblue;
 }
 
 ul {
@@ -21,10 +22,187 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: #333645;
-    height: 20000px;
+    height: 100%;
     width: 275px;
     position: fixed;
+    overflow-y: auto;
+    overflow-x: auto;
     top: 0;
     right: 0;
     color: white;
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.sidebar-small {
+    padding: 21px;
+}
+
+.sidebar-small-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.sidebar-contactUs {
+    padding-top: 20px;
+}
+
+.sidebar-small-a {
+    font-size: 1.125rem;
+    padding: 19px 0 18px;
+    border-radius: 3px;
+    outline: 1px solid rgba(0, 0, 0, .25);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar-small-a:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.software,
+.support,
+.marketing,
+.services,
+.design,
+.security,
+.training {
+    padding-top: 20px;
+}
+
+.software:hover a,
+.support:hover a,
+.marketing:hover a,
+.services:hover a,
+.design:hover a,
+.security:hover a,
+.training:hover a {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.software .sidebar-icon {
+    color: #67809f;
+}
+
+.support .sidebar-icon {
+    color: #4183d7;
+}
+
+.marketing .sidebar-icon {
+    color: #2ecc71;
+}
+
+.services .sidebar-icon {
+    color: #d64541;
+}
+
+.design .sidebar-icon {
+    color: #926fb1;
+}
+
+.security .sidebar-icon {
+    color: #f62459;
+}
+
+.training .sidebar-icon {
+    color: white;
+}
+
+.sidebar-icon {
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+
+.sidebar-small-a small {
+    font-size: 10px;
+    line-height: 14.2px;
+}
+
+.sidebar-small-a p {
+    font-size: 18px;
+}
+
+.sidebar-navigation-small {
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .25);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar-navigation-small li {
+    padding: 10px;
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.title-section {
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.title-section p {
+    padding: 20px;
+}
+
+.training-2,
+.events,
+.company,
+.work,
+.knowledge,
+.assesment,
+.contact-us,
+.blank {
+    display: flex;
+    flex-direction: column;
+    /* border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .25); */
+}
+
+.training-2:hover .title-section,
+.events:hover .title-section,
+.company:hover .title-section,
+.work:hover .title-section,
+.knowledge:hover .title-section,
+.assesment:hover .title-section,
+.contact-us:hover .title-section,
+.blank:hover .title-section {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-navigation {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .25);
+    /* text-align: center; */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar-navigation li {
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.sidebar-navigation li::before {
+    content: "\bb";
+    padding-right: 15px;
+}
+
+a:hover {
+    cursor: pointer;
 }
