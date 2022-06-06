@@ -817,25 +817,30 @@ a {
 .banner-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 6.875rem);
   position: relative;
 }
 
-.banner-content {
+.slick-track {
+  width: 100%;
+  height: calc(100vh - 6.875rem);
+}
+
+.banner-image {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: fill;
   background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/webdesign.jpeg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   display: flex;
   text-align: start;
   justify-content: center;
   color: #ffffff;
+  flex-direction: column;
+}
+.banner-image .banner-content {
+  display: flex;
+  align-items: center;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -843,31 +848,31 @@ a {
   padding-left: 15px;
 }
 @media screen and (min-width: 768px) {
-  .banner-content {
+  .banner-image .banner-content {
     width: 750px;
   }
 }
 @media screen and (min-width: 992px) {
-  .banner-content {
+  .banner-image .banner-content {
     width: 970px;
   }
 }
 @media screen and (min-width: 1260px) {
-  .banner-content {
+  .banner-image .banner-content {
     width: 1200px;
   }
 }
-.banner-content h1 {
+.banner-image .banner-content h1 {
   font-size: 3rem;
   letter-spacing: 0.4px;
   padding-bottom: 25px;
 }
-.banner-content p {
+.banner-image .banner-content p {
   font-size: 1.25rem;
   line-height: 1.4rem;
   padding-bottom: 35px;
 }
-.banner-content .banner-button {
+.banner-image .banner-content .banner-button {
   padding: 5px 20px;
   font-size: 1.25rem;
   line-height: 50px;
@@ -878,7 +883,7 @@ a {
   border: none;
   border-radius: 3px;
 }
-.banner-content .banner-button:hover {
+.banner-image .banner-content .banner-button:hover {
   background-color: #79539a;
 }
 
