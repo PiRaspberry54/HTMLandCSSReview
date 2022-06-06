@@ -4,13 +4,13 @@
     width: 100vw;
     height: calc(100vh - 6.875rem);
     position: relative;
+}
+
+.banner-content {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: fill;
     background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/webdesign.jpeg");
-}
-
-.banner-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,4 +59,12 @@
             background-color: $purple;
         }
     }
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
 }
