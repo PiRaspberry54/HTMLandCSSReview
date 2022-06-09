@@ -105,24 +105,48 @@
             width: 33px;
             height: 3px;
             background-color: white;
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                width: 33px;
-                height: 3px;
-                background-color: white;
-            }
-            // Moves other 2 bars in correct position
-            &::before {
-                content: "";
-                transform: translateY(-8px);
-            }
-            &::after {
-                content: "";
-                transform: translateY(8px);
-            }
+            // opacity: 0;
+            transition: 0.4s;
+        }
+        .before,
+        .after {
+            display: block;
+            position: absolute;
+            width: 33px;
+            height: 3px;
+            background-color: white;
+            left: 0;
+        }
+        // Moves other 2 bars in correct position
+        .before {
+            display: block;
+            width: 33px;
+            height: 3px;
+            background-color: white;
+            transform: translateY(-8px);
+            // transform: translateY(8px) rotate(45deg);
+            transition: 0.4s;
+        }
+        .after {
+            display: block;
+            width: 33px;
+            height: 3px;
+            background-color: white;
+            transform: translateY(6px);
+            // transform: translateY(8px) rotate(315deg);
+            transition: 0.4s;
+        }
+        .menu-animation {
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .before {
+            transform: translateY(2px) rotate(45deg);
+            transition: 0.4s;
+        }
+        .after {
+            transform: translateY(-1px) rotate(-45deg);
+            transition: 0.4s;
         }
     }
     // Menu Title
