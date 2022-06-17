@@ -16,11 +16,70 @@
     height: calc(100vh - 6.875rem);
 }
 
+.banner-image-marketing {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/marketing.jpeg");
+    .banner-button {
+        background-color: $green-base;
+        &:hover {
+            background-color: $green;
+        }
+    }
+}
+
+.banner-image-security {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/security.jpeg");
+    .banner-button {
+        background-color: $pink;
+        &:hover {
+            background-color: $pink-base;
+        }
+    }
+}
+
+.banner-image-software {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/software.jpeg");
+    .banner-button {
+        background-color: $greyblue-base;
+        &:hover {
+            background-color: $greyblue;
+        }
+    }
+}
+
+.banner-image-support {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/support.jpeg");
+    .banner-button {
+        background-color: $blue-base;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}
+
+.banner-image-telecoms {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/telecoms.jpeg");
+    .banner-button {
+        background-color: $red-base;
+        &:hover {
+            background-color: $red;
+        }
+    }
+}
+
+.banner-image-webdesign {
+    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/webdesign.jpeg");
+    .banner-button {
+        background-color: $purple-base;
+        &:hover {
+            background-color: $purple;
+        }
+    }
+}
+
 .banner-image {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: initial;
     object-fit: fill;
-    background-image: linear-gradient(to left, rgba(200, 200, 200, .1), rgba(0, 0, 0, 1)), url("../img/carousel/webdesign.jpeg");
     // position: absolute;
     // top: 0;
     // left: 0;
@@ -64,13 +123,9 @@
             line-height: 50px;
             text-align: center;
             width: 224px;
-            background-color: $purple-base;
             color: white;
             border: none;
             border-radius: 3px;
-            &:hover {
-                background-color: $purple;
-            }
         }
     }
 }
@@ -81,4 +136,18 @@
 
 .slick-next {
     right: 0px;
+}
+
+.slick-dots {
+    bottom: 44px!important;
+    margin-top: 10px;
+}
+
+.slick-dots li button:before {
+    color: white!important;
+}
+
+.slick-dots li.slick-active {
+    border: 1px solid white;
+    border-radius: 50%;
 }

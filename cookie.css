@@ -33,8 +33,8 @@ ul {
 
 .cookie-container {
     display: none;
-    height: 100%;
-    width: 100%;
+    height: 100vw;
+    width: 100vw;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;

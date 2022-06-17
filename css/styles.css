@@ -30,10 +30,23 @@ ul {
   flex-direction: column;
 }
 
-.overlay {
+#overlay {
   display: none;
   height: 100%;
   width: 100%;
+  padding: 15px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#cookie-overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -53,9 +66,10 @@ ul {
 
 #sidebar {
   display: none;
+  transition: 0.4s ease-in-out;
   flex-direction: column;
   background-color: #333645;
-  height: 100%;
+  height: 100vw;
   width: 275px;
   position: fixed;
   overflow-y: scroll;
@@ -344,7 +358,7 @@ a:hover {
   justify-content: flex-end;
 }
 
-.menu-btn {
+#menu-btn {
   width: fit-content;
   height: 56px;
   color: white;
@@ -358,15 +372,15 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.menu-btn:hover {
+#menu-btn:hover {
   background-color: #151a1e;
 }
-.menu-btn .burger-container {
+#menu-btn .burger-container {
   position: relative;
   width: 100%;
   margin: auto 0;
 }
-.menu-btn .burger-container .menu-burger {
+#menu-btn .burger-container .menu-burger {
   display: block;
   position: relative;
   width: 33px;
@@ -374,8 +388,8 @@ a:hover {
   background-color: white;
   transition: 0.4s;
 }
-.menu-btn .burger-container .before,
-.menu-btn .burger-container .after {
+#menu-btn .burger-container .before,
+#menu-btn .burger-container .after {
   display: block;
   position: absolute;
   width: 33px;
@@ -383,7 +397,7 @@ a:hover {
   background-color: white;
   left: 0;
 }
-.menu-btn .burger-container .before {
+#menu-btn .burger-container .before {
   display: block;
   width: 33px;
   height: 3px;
@@ -391,7 +405,7 @@ a:hover {
   transform: translateY(-8px);
   transition: 0.4s;
 }
-.menu-btn .burger-container .after {
+#menu-btn .burger-container .after {
   display: block;
   width: 33px;
   height: 3px;
@@ -399,19 +413,19 @@ a:hover {
   transform: translateY(6px);
   transition: 0.4s;
 }
-.menu-btn .burger-container .menu-animation {
+#menu-btn .burger-container .menu-animation {
   opacity: 0;
   transition: 0.4s;
 }
-.menu-btn .burger-container .before {
+#menu-btn .burger-container .before {
   transform: translateY(2px) rotate(45deg);
   transition: 0.4s;
 }
-.menu-btn .burger-container .after {
+#menu-btn .burger-container .after {
   transform: translateY(-1px) rotate(-45deg);
   transition: 0.4s;
 }
-.menu-btn .menu-title {
+#menu-btn .menu-title {
   font-size: 0.75rem;
 }
 
@@ -869,11 +883,70 @@ a {
   height: calc(100vh - 6.875rem);
 }
 
+.banner-image-marketing {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/marketing.jpeg");
+}
+.banner-image-marketing .banner-button {
+  background-color: #2ecc71;
+}
+.banner-image-marketing .banner-button:hover {
+  background-color: #25a25a;
+}
+
+.banner-image-security {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/security.jpeg");
+}
+.banner-image-security .banner-button {
+  background-color: #de093f;
+}
+.banner-image-security .banner-button:hover {
+  background-color: #f62459;
+}
+
+.banner-image-software {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/software.jpeg");
+}
+.banner-image-software .banner-button {
+  background-color: #67809f;
+}
+.banner-image-software .banner-button:hover {
+  background-color: #526781;
+}
+
+.banner-image-support {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/support.jpeg");
+}
+.banner-image-support .banner-button {
+  background-color: #4183d7;
+}
+.banner-image-support .banner-button:hover {
+  background-color: #286abd;
+}
+
+.banner-image-telecoms {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/telecoms.jpeg");
+}
+.banner-image-telecoms .banner-button {
+  background-color: #d64541;
+}
+.banner-image-telecoms .banner-button:hover {
+  background-color: #bc2c28;
+}
+
+.banner-image-webdesign {
+  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/webdesign.jpeg");
+}
+.banner-image-webdesign .banner-button {
+  background-color: #926fb1;
+}
+.banner-image-webdesign .banner-button:hover {
+  background-color: #79539a;
+}
+
 .banner-image {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: initial;
   object-fit: fill;
-  background-image: linear-gradient(to left, rgba(200, 200, 200, 0.1), black), url("../img/carousel/webdesign.jpeg");
   display: flex;
   text-align: start;
   justify-content: center;
@@ -920,13 +993,9 @@ a {
   line-height: 50px;
   text-align: center;
   width: 224px;
-  background-color: #926fb1;
   color: white;
   border: none;
   border-radius: 3px;
-}
-.banner-image .banner-content .banner-button:hover {
-  background-color: #79539a;
 }
 
 .slick-prev {
@@ -935,6 +1004,20 @@ a {
 
 .slick-next {
   right: 0px;
+}
+
+.slick-dots {
+  bottom: 44px !important;
+  margin-top: 10px;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active {
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 .cards {
@@ -2079,6 +2162,119 @@ footer {
 @media screen and (min-width: 992px) {
   .accreditations-section {
     display: flex;
+  }
+}
+.cookie-content {
+  display: block;
+  flex-direction: column;
+  width: 1000px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: white;
+  border: solid 1px #e5e5e5;
+  border-radius: 5px;
+  z-index: 11;
+}
+.cookie-content .cookie-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.4285px;
+}
+.cookie-content .cookie-header h1 {
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  color: #333645;
+}
+.cookie-content .cookie-body {
+  padding: 20px;
+}
+.cookie-content .cookie-body a {
+  color: black;
+}
+.cookie-content .cookie-body a:hover {
+  text-decoration: underline;
+}
+.cookie-content .cookie-body p {
+  font-size: 16px;
+  color: #666;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+.cookie-content .cookie-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 19px 20px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.cookie-content .cookie-buttons .cookie-row {
+  display: flex;
+  flex-direction: column;
+  margin: 0px -15px;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-accept {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 15px;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-accept .accept {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.4;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #926fb1;
+  color: white;
+  width: 100%;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-accept .accept:hover {
+  background-color: #79539a;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-change {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-change .settings {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.4;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #999aa2;
+  color: white;
+  width: 100%;
+}
+.cookie-content .cookie-buttons .cookie-row .cookie-settings-change .settings:hover {
+  background-color: #84858f;
+}
+
+@media screen and (min-width: 768px) {
+  .cookie-content {
+    width: 600px;
+  }
+
+  .cookie-row {
+    flex-direction: row !important;
+  }
+
+  .cookie-settings-change {
+    margin-bottom: 0px !important;
   }
 }
 

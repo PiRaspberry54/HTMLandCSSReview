@@ -1,11 +1,23 @@
 $(document).ready(function() {
+        let previousScroll = 0;
         let scroll = document.querySelector('html').scrollTop;
         console.log('Here is the value', scroll);
+        setInterval(() => {
+            previousScroll = scroll;
+            scroll = document.querySelector('html').scrollTop;
+            if (scroll < previousScroll) {
+                console.log("Scrolling up");
+                //Get the header to display. 
+            } else {
+                //Remove header.
+            };
+        }, 100);
     })
     // const sidebarElement = $('.sidebar');
     // const sidebarClasses = sidebarElement.classList();
     // console.log(sidebarClasses);
-document.getElementsByClassName('menu-btn').onclick = function() {
+document.getElementById('menu-btn').onclick = function() {
+    AddingClass("sidebar", "flex");
     console.log("working");
 };
 
@@ -19,7 +31,7 @@ function Removingflex() {
     list.classList.remove('flex');
 }
 
-AddingClass("sidebar", "flex");
+// AddingClass("sidebar", "flex");
 // Removingflex();
 //Here is how I can add the class flex and get the element to display. 
 // const list = document.getElementById('sidebar');

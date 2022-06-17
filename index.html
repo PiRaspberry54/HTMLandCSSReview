@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="menu-container">
                                     <div class="menu-position">
-                                        <div class="menu-btn">
+                                        <div id="menu-btn">
                                             <div class="burger-container">
                                                 <!-- burger lines -->
                                                 <div class="before"></div>
@@ -504,37 +504,50 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </header>
         <div class="banner-container">
-            <div class="banner-image">
+            <div class="banner-image banner-image-software">
+                <div class="banner-content">
+                    <h1 class="upper">bespoke software</h1>
+                    <p>Bring your business together with solutions that grow with you.</p>
+                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-image banner-image-support">
+                <div class="banner-content">
+                    <h1 class="upper">it support</h1>
+                    <p>Fast and cost-effective IT support services for your business.</p>
+                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-image banner-image-marketing">
+                <div class="banner-content">
+                    <h1 class="upper">digital marketing</h1>
+                    <p>Generating you new business through result-driven marketing activities.</p>
+                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-image banner-image-telecoms">
+                <div class="banner-content">
+                    <h1 class="upper">telecoms services</h1>
+                    <p>A new approach to connectivity, see how we can help your business.</p>
+                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="banner-image banner-image-webdesign">
                 <div class="banner-content">
                     <h1 class="upper">web design</h1>
                     <p>For businesses looking to make a strong <br> and effective first impression.</p>
                     <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
-            <div class="banner-image">
+            <div class="banner-image banner-image-security">
                 <div class="banner-content">
-                    <h1 class="upper">web design</h1>
-                    <p>For businesses looking to make a strong <br> and effective first impression.</p>
-                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="banner-image">
-                <div class="banner-content">
-                    <h1 class="upper">web design</h1>
-                    <p>For businesses looking to make a strong <br> and effective first impression.</p>
-                    <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="banner-image">
-                <div class="banner-content">
-                    <h1 class="upper">web design</h1>
-                    <p>For businesses looking to make a strong <br> and effective first impression.</p>
+                    <h1 class="upper">cyber security</h1>
+                    <p>Keeping businesses and their customers sensitive information protected.</p>
                     <button class="upper banner-button" type="button">find out more <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
@@ -972,7 +985,29 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/cookie.js"></script>
     <script type="text/javascript" src="js/sidebar.js"></script>
-    <div class="overlay">
+    <div id="cookie-overlay" class="empty">
+        <div class="cookie-content">
+            <div class="cookie-header">
+                <h1>Cookies Policy</h1>
+            </div>
+            <div class="cookie-body">
+                <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on
+                    <a>"Privacy Policy"</a> otherwise click "Accept Cookies" to enter.</p>
+            </div>
+            <div class="cookie-buttons">
+                <div class="cookie-row">
+                    <div class="cookie-settings-change">
+                        <a class="settings">Change settings</a>
+                    </div>
+                    <div class="cookie-settings-accept">
+                        <a id="cookie-button" class="accept">Accept Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay">
+
     </div>
 </body>
 

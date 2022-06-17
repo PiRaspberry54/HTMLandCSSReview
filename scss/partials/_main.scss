@@ -36,10 +36,23 @@ ul {
     flex-direction: column;
 }
 
-.overlay {
+#overlay {
     display: none;
     height: 100%;
     width: 100%;
+    padding: 15px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#cookie-overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
