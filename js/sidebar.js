@@ -5,11 +5,14 @@ $(document).ready(function() {
         setInterval(() => {
             previousScroll = scroll;
             scroll = document.querySelector('html').scrollTop;
-            if (scroll < previousScroll) {
+            if (scroll < previousScroll || scroll === previousScroll) {
                 console.log("Scrolling up");
-                //Get the header to display. 
+                AddingClass("header2", "flex");
+
+            } else if (scroll === 0) {
+                Removingflex("header2", "flex");
             } else {
-                //Remove header.
+                Removingflex("header2", "flex");
             };
         }, 100);
     })
@@ -21,14 +24,19 @@ document.getElementById('menu-btn').onclick = function() {
     console.log("working");
 };
 
+document.getElementById('menu-btn-2').onclick = function() {
+    AddingClass("sidebar", "flex");
+    console.log("working");
+};
+
 function AddingClass(id, className) {
     const list = document.getElementById(id);
     list.classList.add(className);
 }
 
-function Removingflex() {
-    const list = document.getElementById('sidebar');
-    list.classList.remove('flex');
+function Removingflex(id, className) {
+    const list = document.getElementById(id);
+    list.classList.remove(className);
 }
 
 // AddingClass("sidebar", "flex");
