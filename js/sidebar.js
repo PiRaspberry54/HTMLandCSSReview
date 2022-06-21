@@ -10,8 +10,11 @@ $(document).ready(function() {
                 AddingClass("header2", "flex");
 
             } else if (scroll > previousScroll) {
-                Removingflex("header2", "flex");
+                RemovingClass("header2", "flex");
             } else {};
+            if (scroll === 0) {
+                RemovingClass("header2", "flex");
+            }
         }, 100);
     })
     // const sidebarElement = $('.sidebar');
