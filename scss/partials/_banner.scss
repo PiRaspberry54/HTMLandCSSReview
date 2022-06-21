@@ -145,9 +145,12 @@
 
 .slick-dots li button:before {
     color: white!important;
+    font-size: 12px!important;
+    left: -2px!important;
+    top: -1px!important;
 }
 
 .slick-dots li.slick-active {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 }

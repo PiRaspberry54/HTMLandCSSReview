@@ -15,6 +15,12 @@
     padding: 0px;
 }
 
+#main-site {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 body {
     margin: 0px;
     font-size: 13px;
@@ -62,4 +68,8 @@ ul {
 
 .flex {
     display: flex!important;
+}
+
+.position-left {
+    left: -275px;
 }

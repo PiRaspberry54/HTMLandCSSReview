@@ -5,15 +5,13 @@ $(document).ready(function() {
         setInterval(() => {
             previousScroll = scroll;
             scroll = document.querySelector('html').scrollTop;
-            if (scroll < previousScroll || scroll === previousScroll) {
+            if (scroll < previousScroll) {
                 console.log("Scrolling up");
                 AddingClass("header2", "flex");
 
-            } else if (scroll === 0) {
+            } else if (scroll > previousScroll) {
                 Removingflex("header2", "flex");
-            } else {
-                Removingflex("header2", "flex");
-            };
+            } else {};
         }, 100);
     })
     // const sidebarElement = $('.sidebar');
@@ -21,12 +19,24 @@ $(document).ready(function() {
     // console.log(sidebarClasses);
 document.getElementById('menu-btn').onclick = function() {
     AddingClass("sidebar", "flex");
-    console.log("working");
+    AddingClass("overlay", "flex");
+    AddingClass("main-site", "position-left");
+    document.getElementById('overlay').onclick = function() {
+        RemovingClass("sidebar", "flex");
+        RemovingClass("overlay", "flex");
+        RemovingClass("main-site", "position-left");
+    };
 };
 
 document.getElementById('menu-btn-2').onclick = function() {
     AddingClass("sidebar", "flex");
-    console.log("working");
+    AddingClass("overlay", "flex");
+    AddingClass("main-site", "position-left");
+    document.getElementById('overlay').onclick = function() {
+        RemovingClass("sidebar", "flex");
+        RemovingClass("overlay", "flex");
+        RemovingClass("main-site", "position-left");
+    };
 };
 
 function AddingClass(id, className) {
@@ -34,7 +44,7 @@ function AddingClass(id, className) {
     list.classList.add(className);
 }
 
-function Removingflex(id, className) {
+function RemovingClass(id, className) {
     const list = document.getElementById(id);
     list.classList.remove(className);
 }
