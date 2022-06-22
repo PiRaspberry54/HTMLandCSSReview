@@ -36,7 +36,8 @@
 .services-button,
 .software-button,
 .marketing-button,
-.security-button {
+.security-button,
+.training-button {
     display: flex;
     height: 104px;
     background-color: $nav-background;
@@ -49,13 +50,15 @@
     flex: 1;
     justify-content: center;
     @media screen and (min-width: $breakpoint2) {
-        width: calc(950px /6);
+        width: calc(950px / 7);
     }
     @media screen and (min-width: $breakpoint3) {
-        width: calc(1200px / 6);
+        width: calc(1200px / 7);
     }
     a {
-        padding: 19px 0px 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -76,39 +79,44 @@ a {
 }
 
 .icon {
-    font-size: 23px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .fa-code {
     color: $purple-base;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .fa-desktop {
     color: $blue-base;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .phone2 {
     transform: rotate(-45deg);
     color: $red-base;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .software {
     color: $greyblue-base;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .fa-signal {
     color: $green-base;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .fa-shield-alt {
     color: $pink-base;
-    font-size: 23px;
+    font-size: 20px;
+}
+
+.fa-graduation-cap {
+    color: $purple-base;
+    font-size: 20px;
 }
 
 .design-container {
@@ -195,6 +203,20 @@ a {
     }
 }
 
+.training-container {
+    &:hover {
+        .training-button {
+            background-color: $purple-base;
+            .training-icon {
+                color: white;
+            }
+        }
+        .dropdown7-container {
+            display: flex;
+        }
+    }
+}
+
 %dropdown {
     display: none;
     position: absolute;
@@ -234,6 +256,11 @@ a {
 .dropdown6-container {
     @extend %dropdown;
     background-color: $pink;
+}
+
+.dropdown7-container {
+    @extend %dropdown;
+    background-color: $purple;
 }
 
 .dropdown-centre {

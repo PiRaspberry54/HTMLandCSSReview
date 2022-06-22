@@ -98,12 +98,16 @@
     margin-left: 20px;
     background-color: $nav-background;
     border-radius: 3px;
+    border-color: $nav-background;
+    border: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &:hover {
         background-color: #151a1e;
+        border-color: $nav-background;
+        border: 0px;
     }
     // Burger Container
     .burger-container {
@@ -149,18 +153,18 @@
             // transform: translateY(8px) rotate(315deg);
             transition: 0.4s;
         }
-        .menu-animation {
-            opacity: 0;
-            transition: 0.4s;
-        }
-        .before {
-            transform: translateY(2px) rotate(45deg);
-            transition: 0.4s;
-        }
-        .after {
-            transform: translateY(-1px) rotate(-45deg);
-            transition: 0.4s;
-        }
+        // .menu-animation {
+        //     opacity: 0;
+        //     transition: 0.4s;
+        // }
+        // .before {
+        //     transform: translateY(2px) rotate(45deg);
+        //     transition: 0.4s;
+        // }
+        // .after {
+        //     transform: translateY(-1px) rotate(-45deg);
+        //     transition: 0.4s;
+        // }
     }
     // Menu Title
     .menu-title {
@@ -207,6 +211,11 @@
     box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
     border-radius: 2px;
     padding: 5px 15px;
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+    }
 }
 
 .form2 {
@@ -296,7 +305,22 @@
 }
 
 .search-form {
-    padding: 5px 15px
+    padding: 5px 15px;
+    margin-right: -2px;
+    border: 1px solid #e5e5e5;
+    border-color: #ccc;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+    }
+}
+
+.search-form:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
 }
 
 @media screen and (min-width: $breakpoint1) {
@@ -330,7 +354,7 @@
 @media screen and (max-width: 991px) {
     .search-form {
         display: flex;
-        width: 174 px;
+        width: 174px;
     }
 }
 
