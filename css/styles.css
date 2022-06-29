@@ -624,25 +624,14 @@ a:hover {
     display: flex;
   }
 }
-@media screen and (min-width: 1260px) {
-  .search-form {
-    display: flex;
-  }
-}
-@media screen and (max-width: 991px) {
-  .search-form {
-    display: flex;
-    width: 174px;
-  }
-}
 @media screen and (min-width: 992px) {
   .search-form {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 1260px) {
   .search-form {
-    display: flex;
+    display: flex !important;
     width: 240px;
   }
 }
@@ -721,7 +710,7 @@ a:hover {
 .marketing-button,
 .security-button,
 .training-button {
-    width: 171.4285714286px;
+    width: 171.3571428571px;
   }
 }
 .design-button a,
@@ -753,44 +742,44 @@ a {
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 5px;
 }
 
 .fa-code {
   color: #926fb1;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fa-desktop {
   color: #4183d7;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .phone2 {
   transform: rotate(-45deg);
   color: #d64541;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .software {
   color: #67809f;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fa-signal {
   color: #2ecc71;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fa-shield-alt {
   color: #f62459;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fa-graduation-cap {
   color: #926fb1;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .design-container:hover .design-button {
@@ -907,9 +896,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.dropdown-centre a {
+  display: flex;
+  flex-direction: row;
+}
 .dropdown-centre li {
   padding: 0 15px;
-  font-size: 16px;
+  font-size: 13px;
+}
+.dropdown-centre li:first-child {
+  margin-left: -15px;
+}
+@media screen and (min-width: 1260px) {
+  .dropdown-centre li {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .dropdown-centre {
@@ -942,13 +943,13 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 6.875rem);
+  height: 531px;
   position: relative;
 }
 
 .slick-track {
   width: 100%;
-  height: calc(100vh - 6.875rem);
+  height: 616px;
 }
 
 .banner-image-marketing {
@@ -1015,20 +1016,27 @@ a {
   background-repeat: no-repeat;
   background-size: initial;
   object-fit: fill;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
   display: flex;
-  text-align: start;
-  justify-content: center;
   color: #ffffff;
   flex-direction: column;
 }
 .banner-image .banner-content {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
   padding-right: 15px;
   padding-left: 15px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .banner-image .banner-content {
@@ -1046,24 +1054,32 @@ a {
   }
 }
 .banner-image .banner-content h1 {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 52.8px;
   letter-spacing: 0.4px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .banner-image .banner-content p {
-  font-size: 1.25rem;
-  line-height: 1.4rem;
-  padding-bottom: 35px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: 36px;
+  margin-bottom: 35px;
 }
 .banner-image .banner-content .banner-button {
   padding: 5px 20px;
   font-size: 1.25rem;
   line-height: 50px;
   text-align: center;
-  width: 224px;
+  width: fit-content;
   color: white;
   border: none;
   border-radius: 3px;
+}
+.banner-image .banner-content .banner-button i {
+  padding-left: 10px;
 }
 
 .slick-prev {
@@ -2074,16 +2090,14 @@ footer {
   }
   .footer-container .footer-section1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
   }
   .footer-container .footer-section2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 768px) {

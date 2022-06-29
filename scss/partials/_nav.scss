@@ -53,7 +53,7 @@
         width: calc(950px / 7);
     }
     @media screen and (min-width: $breakpoint3) {
-        width: calc(1200px / 7);
+        width: calc(1199.5px / 7);
     }
     a {
         display: flex;
@@ -79,44 +79,44 @@ a {
 }
 
 .icon {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
 }
 
 .fa-code {
     color: $purple-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-desktop {
     color: $blue-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .phone2 {
     transform: rotate(-45deg);
     color: $red-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .software {
     color: $greyblue-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-signal {
     color: $green-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-shield-alt {
     color: $pink-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-graduation-cap {
     color: $purple-base;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .design-container {
@@ -267,9 +267,19 @@ a {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    a {
+        display: flex;
+        flex-direction: row;
+    }
     li {
         padding: 0 15px;
-        font-size: 16px;
+        font-size: 13px;
+        &:first-child {
+            margin-left: -15px;
+        }
+        @media screen and (min-width: $breakpoint3) {
+            font-size: 16px;
+        }
     }
     @media screen and (min-width: $breakpoint1) {
         width: 750px;
