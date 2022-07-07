@@ -462,6 +462,7 @@ a:hover {
   padding-bottom: 3px;
   width: 32px;
   height: 32px;
+  margin-left: 20px;
 }
 .container-phone:hover {
   border-bottom: 3px solid #333645;
@@ -945,6 +946,7 @@ a {
   width: 100%;
   height: 531px;
   position: relative;
+  overflow: hidden;
 }
 
 .slick-track {
@@ -1019,7 +1021,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 531px;
   display: flex;
   color: #ffffff;
   flex-direction: column;
@@ -1036,7 +1038,7 @@ a {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
-  height: 100%;
+  height: 531px;
 }
 @media screen and (min-width: 768px) {
   .banner-image .banner-content {
@@ -1597,7 +1599,6 @@ a {
 }
 .container-latest p {
   width: fit-content;
-  padding-bottom: 35px;
   color: #333645;
   font-size: 20px;
   font-weight: 600;
@@ -1656,6 +1657,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 .latest-row .outer-item .item .img-container {
   display: flex;
@@ -1676,7 +1678,7 @@ a {
   border-top: none;
 }
 .latest-row .outer-item .item .main-content h3 {
-  min-height: 3rem;
+  min-height: 63px;
   line-height: 1.5rem;
   font-size: 1rem;
   padding-bottom: 15px;
